@@ -85,7 +85,7 @@ const PortfolioPage = () => {
         <Navigation />
 
       {/* Hero */}
-      <section className="pt-32 pb-12 bg-gradient-to-b from-card to-background">
+      <section className="pt-32 pb-12">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -153,7 +153,7 @@ const PortfolioPage = () => {
                     } rounded-lg overflow-hidden text-left`}
                 >
                   {item.isLogo ? (
-                    <div className="absolute inset-0 bg-charcoal-light flex items-center justify-center p-8 transition-transform duration-700 group-hover:scale-105">
+                    <div className="absolute inset-0 bg-card/50 backdrop-blur-sm flex items-center justify-center p-8 transition-transform duration-700 group-hover:scale-105">
                       <img
                         src={item.image}
                         alt={item.title}
@@ -219,7 +219,7 @@ const PortfolioPage = () => {
             {portfolioItems.find((i) => i.id === selectedItem) && (
               <>
                 {portfolioItems.find((i) => i.id === selectedItem)?.isLogo ? (
-                  <div className="w-full h-full bg-charcoal-light flex items-center justify-center p-16">
+                  <div className="w-full h-full bg-card/80 backdrop-blur-md flex items-center justify-center p-16">
                     <img
                       src={portfolioItems.find((i) => i.id === selectedItem)?.image}
                       alt={portfolioItems.find((i) => i.id === selectedItem)?.title}
@@ -261,7 +261,7 @@ const PortfolioPage = () => {
             animate={{ scale: 1 }}
             exit={{ scale: 0.9 }}
             onClick={(e) => e.stopPropagation()}
-            className="relative w-full max-w-6xl h-[90vh] bg-charcoal-light rounded-lg overflow-hidden shadow-2xl"
+            className="relative w-full max-w-6xl h-[90vh] bg-card/90 backdrop-blur-md rounded-lg overflow-hidden shadow-2xl"
           >
             <button
               onClick={() => setSelectedBrochure(null)}

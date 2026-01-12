@@ -14,7 +14,7 @@ const About = () => {
   ];
 
   return (
-    <section className="section bg-card" ref={ref}>
+    <section className="section" ref={ref}>
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
@@ -69,7 +69,7 @@ const About = () => {
           >
             <div className="relative aspect-[4/5] rounded-lg overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-transparent" />
-              <div className="absolute inset-0 bg-charcoal-light flex items-center justify-center">
+              <div className="absolute inset-0 bg-card/50 backdrop-blur-sm flex items-center justify-center">
                 <div className="text-center">
                   <span className="text-8xl font-heading text-primary opacity-20">NB</span>
                 </div>

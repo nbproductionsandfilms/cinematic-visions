@@ -79,7 +79,7 @@ const Services = () => {
             >
               <Link
                 to={service.link}
-                className="group block p-8 bg-card border border-border rounded-lg hover:border-primary/50 transition-all duration-500 h-full"
+                className="group block p-8 bg-card/30 backdrop-blur-sm border border-border/50 rounded-lg hover:border-primary/50 hover:bg-card/50 transition-all duration-500 h-full"
               >
                 <div className="mb-6">
                   <service.icon

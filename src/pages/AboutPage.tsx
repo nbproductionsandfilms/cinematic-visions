@@ -18,7 +18,7 @@ const AboutPage = () => {
         <Navigation />
         
         {/* Hero */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-card to-background">
+      <section className="pt-32 pb-20">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -75,7 +75,7 @@ const AboutPage = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="relative aspect-square"
             >
-              <div className="absolute inset-0 bg-charcoal-light rounded-lg overflow-hidden">
+              <div className="absolute inset-0 bg-card/50 backdrop-blur-sm rounded-lg overflow-hidden">
                 <div className="absolute inset-4 border border-primary/30 rounded" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <span className="text-9xl font-heading text-primary/20">NB</span>
@@ -87,7 +87,7 @@ const AboutPage = () => {
       </section>
 
       {/* Vision */}
-      <section className="section bg-card">
+      <section className="section">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
             <motion.div

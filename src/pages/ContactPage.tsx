@@ -43,7 +43,7 @@ const ContactPage = () => {
         <Navigation />
       
       {/* Hero */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-card to-background">
+      <section className="pt-32 pb-20">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -76,7 +76,7 @@ const ContactPage = () => {
               transition={{ duration: 0.6 }}
               className="lg:col-span-3"
             >
-              <div className="bg-card border border-border rounded-lg p-8">
+              <div className="bg-card/30 backdrop-blur-sm border border-border/50 rounded-lg p-8">
                 <h2 className="heading-sm mb-6">Send Us a Message</h2>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
@@ -181,7 +181,7 @@ const ContactPage = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="lg:col-span-2 space-y-6"
             >
-              <div className="bg-card border border-border rounded-lg p-8">
+              <div className="bg-card/30 backdrop-blur-sm border border-border/50 rounded-lg p-8">
                 <h3 className="text-xl font-heading mb-6">Contact Information</h3>
                 
                 <div className="space-y-6">
@@ -243,7 +243,7 @@ const ContactPage = () => {
               </div>
 
               {/* Social Links */}
-              <div className="bg-card border border-border rounded-lg p-8">
+              <div className="bg-card/30 backdrop-blur-sm border border-border/50 rounded-lg p-8">
                 <h3 className="text-xl font-heading mb-6">Follow Us</h3>
                 <div className="flex gap-4">
                   <a
@@ -270,7 +270,7 @@ const ContactPage = () => {
       </section>
 
       {/* Thank You Message */}
-      <section className="section bg-card">
+      <section className="section">
         <div className="container-custom text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

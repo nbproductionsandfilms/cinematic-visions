@@ -33,7 +33,7 @@ const TeamPage = () => {
       <Navigation />
 
       {/* Hero */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-card to-background">
+      <section className="pt-32 pb-20">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -119,7 +119,7 @@ const TeamPage = () => {
       </section>
 
       {/* Values */}
-      <section className="section bg-card">
+      <section className="section">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

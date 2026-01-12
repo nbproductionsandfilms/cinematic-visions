@@ -51,7 +51,7 @@ const Contact = () => {
                     onChange={(e) =>
                       setFormData({ ...formData, name: e.target.value })
                     }
-                    className="bg-card border-border focus:border-primary"
+                    className="bg-card/30 backdrop-blur-sm border-border/50 focus:border-primary"
                   />
                 </div>
                 <div>
@@ -62,7 +62,7 @@ const Contact = () => {
                     onChange={(e) =>
                       setFormData({ ...formData, email: e.target.value })
                     }
-                    className="bg-card border-border focus:border-primary"
+                    className="bg-card/30 backdrop-blur-sm border-border/50 focus:border-primary"
                   />
                 </div>
               </div>
@@ -73,7 +73,7 @@ const Contact = () => {
                   onChange={(e) =>
                     setFormData({ ...formData, subject: e.target.value })
                   }
-                  className="bg-card border-border focus:border-primary"
+                  className="bg-card/30 backdrop-blur-sm border-border/50 focus:border-primary"
                 />
               </div>
               <div>
@@ -84,7 +84,7 @@ const Contact = () => {
                   onChange={(e) =>
                     setFormData({ ...formData, message: e.target.value })
                   }
-                  className="bg-card border-border focus:border-primary resize-none"
+                  className="bg-card/30 backdrop-blur-sm border-border/50 focus:border-primary resize-none"
                 />
               </div>
               <Button type="submit" size="lg" className="w-full md:w-auto">
@@ -101,7 +101,7 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="lg:pl-8"
           >
-            <div className="bg-card border border-border rounded-lg p-8 h-full">
+            <div className="bg-card/30 backdrop-blur-sm border border-border/50 rounded-lg p-8 h-full">
               <h3 className="text-2xl font-heading mb-8">Contact Information</h3>
               
               <div className="space-y-8">
