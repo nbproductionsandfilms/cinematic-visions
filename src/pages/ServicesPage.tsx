@@ -101,7 +101,7 @@ const ServicesPage = () => {
         <Navigation />
       
       {/* Hero */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-card to-background">
+      <section className="pt-32 pb-20">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -158,7 +158,7 @@ const ServicesPage = () => {
                 </div>
                 
                 <div className={`relative aspect-[4/3] ${index % 2 === 1 ? "lg:order-1" : ""}`}>
-                  <div className="absolute inset-0 bg-charcoal-light rounded-lg overflow-hidden">
+                  <div className="absolute inset-0 bg-card/50 backdrop-blur-sm rounded-lg overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent" />
                     <div className="absolute inset-0 flex items-center justify-center">
                       <service.icon size={120} className="text-primary/10" />
@@ -173,7 +173,7 @@ const ServicesPage = () => {
       </section>
 
       {/* CTA */}
-      <section className="section bg-card">
+      <section className="section">
         <div className="container-custom text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

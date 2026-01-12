@@ -39,7 +39,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="section bg-card" ref={ref}>
+    <section className="section" ref={ref}>
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

@@ -79,7 +79,7 @@ const Portfolio = () => {
       : portfolioItems.filter((item) => item.category === activeCategory);
 
   return (
-    <section className="section bg-card" ref={ref}>
+    <section className="section" ref={ref}>
       <div className="container-custom">
         {/* Header */}
         <motion.div
@@ -149,7 +149,7 @@ const Portfolio = () => {
                     } rounded-lg overflow-hidden`}
                 >
                   {item.isLogo ? (
-                    <div className="absolute inset-0 bg-charcoal-light flex items-center justify-center p-8 transition-transform duration-700 group-hover:scale-105">
+                    <div className="absolute inset-0 bg-card/50 backdrop-blur-sm flex items-center justify-center p-8 transition-transform duration-700 group-hover:scale-105">
                       <img
                         src={item.image}
                         alt={item.title}
@@ -219,7 +219,7 @@ const Portfolio = () => {
             animate={{ scale: 1 }}
             exit={{ scale: 0.9 }}
             onClick={(e) => e.stopPropagation()}
-            className="relative w-full max-w-6xl h-[90vh] bg-charcoal-light rounded-lg overflow-hidden shadow-2xl"
+            className="relative w-full max-w-6xl h-[90vh] bg-card/80 backdrop-blur-md rounded-lg overflow-hidden shadow-2xl"
           >
             <button
               onClick={() => setSelectedBrochure(null)}
