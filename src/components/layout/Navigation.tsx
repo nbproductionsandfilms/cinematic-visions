@@ -36,19 +36,17 @@ const Navigation = () => {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          isScrolled ? "glass py-4" : "bg-transparent py-6"
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? "glass py-4" : "bg-transparent py-6"
+          }`}
       >
         <div className="container-custom flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <span className="text-2xl md:text-3xl font-heading font-semibold text-primary transition-all duration-300 group-hover:tracking-wider">
-              NB
-            </span>
-            <span className="hidden md:block text-sm font-body text-muted-foreground tracking-widest uppercase">
-              Productions & Films
-            </span>
+            <img
+              src="/logo.png"
+              alt="N B Productions & Films"
+              className="h-10 md:h-12 w-auto object-contain transition-all duration-300 group-hover:scale-105"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -57,11 +55,10 @@ const Navigation = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`link-underline text-sm tracking-wide transition-colors duration-300 ${
-                  location.pathname === link.path
+                className={`link-underline text-sm tracking-wide transition-colors duration-300 ${location.pathname === link.path
                     ? "text-primary"
                     : "text-muted-foreground hover:text-foreground"
-                }`}
+                  }`}
               >
                 {link.name}
               </Link>
@@ -117,11 +114,10 @@ const Navigation = () => {
                   >
                     <Link
                       to={link.path}
-                      className={`text-2xl font-heading transition-colors duration-300 ${
-                        location.pathname === link.path
+                      className={`text-2xl font-heading transition-colors duration-300 ${location.pathname === link.path
                           ? "text-primary"
                           : "text-foreground hover:text-primary"
-                      }`}
+                        }`}
                     >
                       {link.name}
                     </Link>

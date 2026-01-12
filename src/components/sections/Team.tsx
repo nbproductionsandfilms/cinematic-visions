@@ -7,19 +7,19 @@ const teamMembers = [
     name: "Nikhil Baharwal",
     role: "Director & Co-founder",
     description: "Visionary leader with a passion for cinematic storytelling.",
-    image: "NB",
+    image: "/founders/Nikhil-Baharwal-Director-and-Co-founder.png",
   },
   {
     name: "Divyaraj Baharwal",
     role: "Co-founder & Technical Director",
     description: "Technical mastermind ensuring flawless execution.",
-    image: "DB",
+    image: "/founders/Divyaraj-Baharwal-Technical-Director-and-Co-founder.png",
   },
   {
     name: "Durvesh Baharwal",
     role: "Co-founder & Creative Director",
     description: "Creative genius driving innovative visual concepts.",
-    image: "DB",
+    image: "/founders/Durvesh-Baharwal-Creative-Director-and-Co-founder.png",
   },
 ];
 
@@ -59,15 +59,18 @@ const Team = () => {
               className="group text-center"
             >
               {/* Avatar */}
-              <div className="relative mb-6 mx-auto w-48 h-48">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/30 to-transparent group-hover:from-primary/50 transition-all duration-500" />
-                <div className="absolute inset-2 rounded-full bg-charcoal-light flex items-center justify-center border border-border group-hover:border-primary/50 transition-colors duration-500">
-                  <span className="text-4xl font-heading text-primary">
-                    {member.image}
-                  </span>
+              <div className="relative mb-6 mx-auto w-full max-w-sm">
+                {/* Background glow */}
+                <div className="absolute -inset-2 bg-gradient-to-br from-primary/20 via-primary/5 to-transparent blur-xl group-hover:from-primary/30 transition-all duration-500" />
+
+                {/* Gold frame border */}
+                <div className="relative border-2 border-primary bg-background p-2 group-hover:border-primary/80 transition-all duration-500">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-full h-auto object-contain relative z-10 transition-transform duration-500 group-hover:scale-[1.02]"
+                  />
                 </div>
-                {/* Hover ring */}
-                <div className="absolute inset-0 rounded-full border-2 border-primary scale-110 opacity-0 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500" />
               </div>
 
               {/* Info */}

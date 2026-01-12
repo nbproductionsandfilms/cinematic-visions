@@ -8,19 +8,19 @@ const teamMembers = [
     name: "Nikhil Baharwal",
     role: "Director & Co-founder",
     bio: "Nikhil brings over 5 years of experience in visual storytelling. His vision and leadership have shaped N B Productions into what it is today. With a keen eye for cinematic excellence, he oversees all major productions.",
-    initials: "NB",
+    image: "/founders/Nikhil-Baharwal-Director-and-Co-founder.png",
   },
   {
     name: "Divyaraj Baharwal",
     role: "Co-founder & Technical Director",
     bio: "Divyaraj is the technical backbone of the team. His expertise in equipment, post-production, and technical workflows ensures every project meets the highest quality standards.",
-    initials: "DB",
+    image: "/founders/Divyaraj-Baharwal-Technical-Director-and-Co-founder.png",
   },
   {
     name: "Durvesh Baharwal",
     role: "Co-founder & Creative Director",
     bio: "Durvesh leads the creative vision across all projects. His innovative approach to design and storytelling brings fresh perspectives to every campaign and production.",
-    initials: "DB",
+    image: "/founders/Durvesh-Baharwal-Creative-Director-and-Co-founder.png",
   },
 ];
 
@@ -28,7 +28,7 @@ const TeamPage = () => {
   return (
     <main className="min-h-screen bg-background">
       <Navigation />
-      
+
       {/* Hero */}
       <section className="pt-32 pb-20 bg-gradient-to-b from-card to-background">
         <div className="container-custom">
@@ -62,23 +62,26 @@ const TeamPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.6 }}
-                className={`grid lg:grid-cols-2 gap-12 items-center ${
-                  index % 2 === 1 ? "" : ""
-                }`}
+                className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? "" : ""
+                  }`}
               >
                 <div className={index % 2 === 1 ? "lg:order-2" : ""}>
                   {/* Avatar */}
-                  <div className="relative w-64 h-64 mx-auto lg:mx-0">
-                    <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/30 to-transparent" />
-                    <div className="absolute inset-2 rounded-full bg-charcoal-light flex items-center justify-center border border-border">
-                      <span className="text-6xl font-heading text-primary">
-                        {member.initials}
-                      </span>
+                  <div className="relative w-full max-w-md mx-auto lg:mx-0">
+                    {/* Background glow */}
+                    <div className="absolute -inset-2 bg-gradient-to-br from-primary/20 via-primary/5 to-transparent blur-xl" />
+
+                    {/* Gold frame border */}
+                    <div className="relative border-2 border-primary bg-background p-2 hover:border-primary/80 transition-all duration-500">
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        className="w-full h-auto object-contain relative z-10"
+                      />
                     </div>
-                    <div className="absolute inset-0 rounded-full border-2 border-primary/20" />
                   </div>
                 </div>
-                
+
                 <div className={index % 2 === 1 ? "lg:order-1" : ""}>
                   <h2 className="heading-md mb-2">{member.name}</h2>
                   <p className="text-primary text-lg tracking-wide mb-6">{member.role}</p>
