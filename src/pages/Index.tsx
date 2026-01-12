@@ -1,5 +1,6 @@
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
+import GalaxyBackground from "@/components/layout/GalaxyBackground";
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import Services from "@/components/sections/Services";
@@ -11,18 +12,22 @@ import CTA from "@/components/sections/CTA";
 
 const Index = () => {
   return (
-    <main className="min-h-screen bg-background">
-      <Navigation />
-      <Hero />
-      <About />
-      <Services />
-      <Portfolio />
-      <Team />
-      <Testimonials />
-      <CTA />
-      <Contact />
-      <Footer />
-    </main>
+    <>
+      <GalaxyBackground />
+      
+      <main className="min-h-screen">
+        <Navigation />
+        <Hero />
+        <About />
+        <Services />
+        <Portfolio />
+        <Team />
+        <Testimonials />
+        <CTA />
+        <Contact />
+        <Footer />
+      </main>
+    </>
   );
 };
 

@@ -1,5 +1,6 @@
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
+import GalaxyBackground from "@/components/layout/GalaxyBackground";
 import { motion } from "framer-motion";
 import { Camera, Video, Film, Palette, FileImage, Megaphone, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -94,8 +95,10 @@ const services = [
 
 const ServicesPage = () => {
   return (
-    <main className="min-h-screen bg-background">
-      <Navigation />
+    <>
+      <GalaxyBackground />
+      <main className="min-h-screen">
+        <Navigation />
       
       {/* Hero */}
       <section className="pt-32 pb-20 bg-gradient-to-b from-card to-background">
@@ -192,7 +195,8 @@ const ServicesPage = () => {
       </section>
 
       <Footer />
-    </main>
+      </main>
+    </>
   );
 };
 
