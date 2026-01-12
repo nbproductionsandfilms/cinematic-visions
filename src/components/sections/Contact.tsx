@@ -103,7 +103,7 @@ const Contact = () => {
           >
             <div className="bg-card/30 backdrop-blur-sm border border-border/50 rounded-lg p-8 h-full">
               <h3 className="text-2xl font-heading mb-8">Contact Information</h3>
-              
+
               <div className="space-y-8">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
@@ -112,10 +112,10 @@ const Contact = () => {
                   <div>
                     <p className="text-sm text-muted-foreground mb-1">Email Us</p>
                     <a
-                      href="mailto:hello@nbproductions.com"
+                      href="mailto:nbproductionsandfilms@gmail.com"
                       className="text-foreground hover:text-primary transition-colors"
                     >
-                      hello@nbproductions.com
+                      nbproductionsandfilms@gmail.com
                     </a>
                   </div>
                 </div>
@@ -127,10 +127,10 @@ const Contact = () => {
                   <div>
                     <p className="text-sm text-muted-foreground mb-1">Call Us</p>
                     <a
-                      href="tel:+919876543210"
+                      href="tel:+917709477615"
                       className="text-foreground hover:text-primary transition-colors"
                     >
-                      +91 98765 43210
+                      +91 77094 77615
                     </a>
                   </div>
                 </div>
@@ -142,7 +142,7 @@ const Contact = () => {
                   <div>
                     <p className="text-sm text-muted-foreground mb-1">Visit Us</p>
                     <p className="text-foreground">
-                      Mumbai, Maharashtra
+                      Bhosari, Pune - 411039
                       <br />
                       India
                     </p>

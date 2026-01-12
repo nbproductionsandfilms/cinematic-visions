@@ -85,15 +85,15 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-3 text-muted-foreground text-sm">
                 <Mail size={16} className="text-primary" />
-                hello@nbproductions.com
+                nbproductionsandfilms@gmail.com
               </li>
               <li className="flex items-center gap-3 text-muted-foreground text-sm">
                 <Phone size={16} className="text-primary" />
-                +91 98765 43210
+                +91 77094 77615
               </li>
               <li className="flex items-start gap-3 text-muted-foreground text-sm">
                 <MapPin size={16} className="text-primary mt-0.5" />
-                Mumbai, India
+                Bhosari, Pune - 411039
               </li>
             </ul>
             <div className="flex gap-4 mt-6">

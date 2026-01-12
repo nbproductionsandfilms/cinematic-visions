@@ -69,11 +69,11 @@ const About = () => {
           >
             <div className="relative aspect-[4/5] rounded-lg overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-transparent" />
-              <div className="absolute inset-0 bg-card/50 backdrop-blur-sm flex items-center justify-center">
-                <div className="text-center">
-                  <span className="text-8xl font-heading text-primary opacity-20">NB</span>
-                </div>
-              </div>
+              <img
+                src="/founders/about-us.jpg"
+                alt="N B Productions & Films Team"
+                className="w-full h-full object-cover"
+              />
               {/* Decorative frame */}
               <div className="absolute inset-4 border border-primary/30 rounded pointer-events-none" />
             </div>

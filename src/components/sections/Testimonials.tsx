@@ -4,24 +4,24 @@ import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "N B Productions captured our wedding day perfectly. Every frame tells a story, and the attention to detail was incredible.",
-    author: "Priya & Rahul",
-    role: "Wedding Clients",
+    quote: "N B Productions transformed our brand identity with exceptional logo design and marketing materials. Their creative vision perfectly captured the essence of AI Alpha Tech. Highly professional and a pleasure to work with!",
+    author: "Shamalee Pawar",
+    role: "Founder, AI Alpha Tech",
   },
   {
-    quote: "Their cinematography work for our brand campaign exceeded all expectations. Professional, creative, and delivered on time.",
-    author: "Amit Sharma",
-    role: "Marketing Director, TechCorp",
+    quote: "The promotional videos and brochures created by N B Productions elevated our trekking packages to a whole new level. Their attention to detail and understanding of adventure tourism is outstanding. Our bookings increased significantly!",
+    author: "Saurabh Sawant",
+    role: "Co-founder, Alpine Trekkers",
   },
   {
-    quote: "The team's creative vision transformed our ideas into stunning visual content. Highly recommend their services!",
-    author: "Sneha Patel",
-    role: "Founder, StyleHub",
+    quote: "Working with N B Productions was a game-changer for Infinite Waves. Their branding expertise and creative designs helped us establish a strong market presence. The team's dedication and innovative approach are truly commendable.",
+    author: "Vikrant Narkhade",
+    role: "Founder, Infinite Waves",
   },
   {
-    quote: "Exceptional quality and professionalism. They understood our brand and delivered content that truly resonates.",
-    author: "Vikram Singh",
-    role: "CEO, StartupX",
+    quote: "From logo design to complete marketing collateral, N B Productions delivered beyond expectations. Their cinematic approach to our travel content captured the spirit of adventure perfectly. A reliable partner for all our creative needs!",
+    author: "Darshan Patil",
+    role: "Founder, The Bhartiya Trekkers",
   },
 ];
 
@@ -57,7 +57,7 @@ const Testimonials = () => {
           {/* Testimonial Card */}
           <div className="relative">
             <Quote size={48} className="text-primary/20 absolute -top-4 left-0" />
-            
+
             <motion.div
               key={currentIndex}
               initial={{ opacity: 0, x: 50 }}
@@ -88,20 +88,19 @@ const Testimonials = () => {
               >
                 <ChevronLeft size={20} />
               </button>
-              
+
               <div className="flex gap-2">
                 {testimonials.map((_, index) => (
                   <button
                     key={index}
                     onClick={() => setCurrentIndex(index)}
-                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                      index === currentIndex ? "bg-primary w-8" : "bg-border hover:bg-muted-foreground"
-                    }`}
+                    className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentIndex ? "bg-primary w-8" : "bg-border hover:bg-muted-foreground"
+                      }`}
                     aria-label={`Go to testimonial ${index + 1}`}
                   />
                 ))}
               </div>
-              
+
               <button
                 onClick={next}
                 className="p-3 rounded-full border border-border hover:border-primary hover:text-primary transition-colors duration-300"
