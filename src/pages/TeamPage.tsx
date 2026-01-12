@@ -1,5 +1,6 @@
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
+import GalaxyBackground from "@/components/layout/GalaxyBackground";
 import { motion } from "framer-motion";
 import { Instagram, Linkedin, Twitter } from "lucide-react";
 
@@ -26,7 +27,9 @@ const teamMembers = [
 
 const TeamPage = () => {
   return (
-    <main className="min-h-screen bg-background">
+    <>
+      <GalaxyBackground />
+      <main className="min-h-screen">
       <Navigation />
 
       {/* Hero */}
@@ -153,7 +156,8 @@ const TeamPage = () => {
       </section>
 
       <Footer />
-    </main>
+      </main>
+    </>
   );
 };
 

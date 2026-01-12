@@ -1,5 +1,6 @@
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
+import GalaxyBackground from "@/components/layout/GalaxyBackground";
 import { motion } from "framer-motion";
 
 const AboutPage = () => {
@@ -11,10 +12,12 @@ const AboutPage = () => {
   ];
 
   return (
-    <main className="min-h-screen bg-background">
-      <Navigation />
-      
-      {/* Hero */}
+    <>
+      <GalaxyBackground />
+      <main className="min-h-screen">
+        <Navigation />
+        
+        {/* Hero */}
       <section className="pt-32 pb-20 bg-gradient-to-b from-card to-background">
         <div className="container-custom">
           <motion.div
@@ -128,7 +131,8 @@ const AboutPage = () => {
       </section>
 
       <Footer />
-    </main>
+      </main>
+    </>
   );
 };
 

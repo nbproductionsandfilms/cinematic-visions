@@ -1,5 +1,6 @@
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
+import GalaxyBackground from "@/components/layout/GalaxyBackground";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { X, FileText } from "lucide-react";
@@ -78,8 +79,10 @@ const PortfolioPage = () => {
       : portfolioItems.filter((item) => item.category === activeCategory);
 
   return (
-    <main className="min-h-screen bg-background">
-      <Navigation />
+    <>
+      <GalaxyBackground />
+      <main className="min-h-screen">
+        <Navigation />
 
       {/* Hero */}
       <section className="pt-32 pb-12 bg-gradient-to-b from-card to-background">
@@ -276,7 +279,8 @@ const PortfolioPage = () => {
       )}
 
       <Footer />
-    </main>
+      </main>
+    </>
   );
 };
 
