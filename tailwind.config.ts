@@ -69,8 +69,9 @@ export default {
         },
       },
       fontFamily: {
-        heading: ['Cormorant Garamond', 'Georgia', 'serif'],
-        body: ['Inter', '-apple-system', 'sans-serif'],
+        heading: ['Poppins', '-apple-system', 'sans-serif'],
+        body: ['Barlow Semi Condensed', '-apple-system', 'sans-serif'],
+        brand: ['Century Gothic', 'CenturyGothic', 'AppleGothic', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",

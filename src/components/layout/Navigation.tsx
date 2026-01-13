@@ -55,7 +55,7 @@ const Navigation = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`link-underline text-sm tracking-wide transition-colors duration-300 ${location.pathname === link.path
+                className={`link-underline text-sm font-semibold tracking-wide transition-colors duration-300 font-body ${location.pathname === link.path
                     ? "text-primary"
                     : "text-muted-foreground hover:text-foreground"
                   }`}

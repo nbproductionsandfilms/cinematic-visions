@@ -17,10 +17,10 @@ const Footer = () => {
             transition={{ duration: 0.5 }}
           >
             <Link to="/" className="inline-block mb-4">
-              <span className="text-3xl font-heading font-semibold text-primary">
+              <span className="text-3xl font-brand font-bold text-primary">
                 NB
               </span>
-              <span className="block text-xs tracking-widest uppercase text-muted-foreground mt-1">
+              <span className="block text-xs tracking-widest uppercase text-muted-foreground mt-1 font-body font-semibold">
                 Productions & Films
               </span>
             </Link>

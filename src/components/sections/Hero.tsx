@@ -40,9 +40,9 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="heading-xl mb-6"
         >
-          <span className="text-foreground">N B Productions</span>
+          <span className="text-foreground font-brand">N B Productions</span>
           <br />
-          <span className="text-primary">&amp; Films</span>
+          <span className="text-primary font-brand">&amp; Films</span>
         </motion.h1>
 
         <motion.p
