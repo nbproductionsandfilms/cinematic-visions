@@ -38,11 +38,14 @@ const Hero = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="heading-xl mb-6"
+          className="mb-6"
         >
-          <span className="text-foreground font-brand">N B Productions</span>
-          <br />
-          <span className="text-primary font-brand">&amp; Films</span>
+          <span className="block text-[8rem] md:text-[12rem] lg:text-[16rem] font-heading font-bold text-foreground leading-none tracking-tighter">
+            NB
+          </span>
+          <span className="block text-4xl md:text-5xl lg:text-6xl font-heading font-medium text-primary -mt-4 md:-mt-8 tracking-wide">
+            productions & films
+          </span>
         </motion.h1>
 
         <motion.p
