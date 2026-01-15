@@ -78,55 +78,7 @@ const EventsPage = () => {
           </div>
         </section>
 
-        {/* Event Categories */}
-        <section className="py-20">
-          <div className="container-custom">
-            <div className="space-y-20">
-              {eventCategories.map((event, index) => (
-                <motion.div
-                  key={event.title}
-                  initial={{ opacity: 0, y: 40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6 }}
-                  className={`grid lg:grid-cols-2 gap-12 items-center ${
-                    index % 2 === 1 ? "lg:flex-row-reverse" : ""
-                  }`}
-                >
-                  <div className={index % 2 === 1 ? "lg:order-2" : ""}>
-                    <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
-                      <img
-                        src={event.image}
-                        alt={event.title}
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
-                    </div>
-                  </div>
-                  <div className={index % 2 === 1 ? "lg:order-1" : ""}>
-                    <event.icon className="w-12 h-12 text-primary mb-6" />
-                    <h2 className="heading-md mb-4">{event.title}</h2>
-                    <p className="text-muted-foreground leading-relaxed mb-6">
-                      {event.description}
-                    </p>
-                    <div className="flex flex-wrap gap-3">
-                      {event.highlights.map((highlight) => (
-                        <span
-                          key={highlight}
-                          className="px-4 py-2 bg-card/30 backdrop-blur-sm border border-border/50 rounded-full text-sm"
-                        >
-                          {highlight}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Apna Wala Click Feature Section */}
+        {/* Apna Wala Click Feature Section - FIRST */}
         <section className="py-20">
           <div className="container-custom">
             <motion.div
@@ -231,6 +183,68 @@ const EventsPage = () => {
                 </Button>
               </div>
             </motion.div>
+          </div>
+        </section>
+
+        {/* Other Event Categories */}
+        <section className="py-20">
+          <div className="container-custom">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-16"
+            >
+              <span className="text-primary text-sm tracking-[0.3em] uppercase font-medium mb-4 block">
+                More Events
+              </span>
+              <h2 className="heading-lg mb-6">
+                Other <span className="text-primary">Experiences</span>
+              </h2>
+            </motion.div>
+            <div className="space-y-20">
+              {eventCategories.map((event, index) => (
+                <motion.div
+                  key={event.title}
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                  className={`grid lg:grid-cols-2 gap-12 items-center ${
+                    index % 2 === 1 ? "lg:flex-row-reverse" : ""
+                  }`}
+                >
+                  <div className={index % 2 === 1 ? "lg:order-2" : ""}>
+                    <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
+                      <img
+                        src={event.image}
+                        alt={event.title}
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
+                    </div>
+                  </div>
+                  <div className={index % 2 === 1 ? "lg:order-1" : ""}>
+                    <event.icon className="w-12 h-12 text-primary mb-6" />
+                    <h2 className="heading-md mb-4">{event.title}</h2>
+                    <p className="text-muted-foreground leading-relaxed mb-6">
+                      {event.description}
+                    </p>
+                    <div className="flex flex-wrap gap-3">
+                      {event.highlights.map((highlight) => (
+                        <span
+                          key={highlight}
+                          className="px-4 py-2 bg-card/30 backdrop-blur-sm border border-border/50 rounded-full text-sm"
+                        >
+                          {highlight}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </section>
 
