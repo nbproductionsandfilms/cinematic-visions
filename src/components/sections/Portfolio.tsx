@@ -61,10 +61,10 @@ const portfolioItems = [
   { id: 47, title: "Gokarna Package", category: "Brochures", pdfUrl: "/broshures/Gokarna Broshure.pdf", isBrochure: true },
   { id: 48, title: "Manali Package", category: "Brochures", pdfUrl: "/broshures/Manali Broshure.pdf", isBrochure: true },
   { id: 49, title: "Rajasthan Package", category: "Brochures", pdfUrl: "/broshures/Rajasthan Broshure alpine Trekkers.pdf", isBrochure: true },
-  // Placeholders
-  { id: 50, title: "Wedding Story", category: "Photography", image: "linear-gradient(135deg, hsl(43, 74%, 30%) 0%, hsl(0, 0%, 10%) 100%)" },
-  { id: 51, title: "Brand Film", category: "Videography", image: "linear-gradient(135deg, hsl(200, 40%, 20%) 0%, hsl(0, 0%, 8%) 100%)" },
-  { id: 52, title: "Product Shoot", category: "Photography", image: "linear-gradient(135deg, hsl(160, 40%, 20%) 0%, hsl(0, 0%, 8%) 100%)" },
+  // No placeholders
+  { id: 94, title: "Traditional Shoot", category: "Photography", image: "/new/traditional_shoots/WhatsApp Image 2026-01-13 at 11.19.04.jpeg", isPhotography: true },
+  { id: 92, title: "Model Portfolio", category: "Photography", image: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.20.37.jpeg", isPhotography: true },
+  { id: 78, title: "Aesthetic Composition", category: "Photography", image: "/new/aesthetic_shoots/WhatsApp Image 2026-01-13 at 11.19.32.jpeg", isPhotography: true },
 ];
 
 const Portfolio = () => {
@@ -141,11 +141,11 @@ const Portfolio = () => {
                 </button>
               ) : (
                 <Link
-                  to={`/portfolio/${item.id}`}
+                  to="/portfolio"
                   className={`group block relative ${item.isThumbnail ? 'aspect-video' :
-                    item.isPoster ? 'aspect-[3/4]' :
-                      item.isReel ? 'aspect-[9/16]' :
-                        'aspect-[4/3]'
+                      item.isPoster || item.isPhotography ? 'aspect-[3/4]' :
+                        item.isReel ? 'aspect-[9/16]' :
+                          'aspect-[4/3]'
                     } rounded-lg overflow-hidden`}
                 >
                   {item.isLogo ? (
@@ -156,7 +156,7 @@ const Portfolio = () => {
                         className="max-w-full max-h-full object-contain transition-all duration-500 group-hover:scale-110"
                       />
                     </div>
-                  ) : item.isThumbnail || item.isPoster || item.isReel ? (
+                  ) : item.isThumbnail || item.isPoster || item.isReel || item.isPhotography ? (
                     <div className="absolute inset-0">
                       <img
                         src={item.image}
@@ -166,8 +166,7 @@ const Portfolio = () => {
                     </div>
                   ) : (
                     <div
-                      className="absolute inset-0 transition-transform duration-700 group-hover:scale-110"
-                      style={{ background: item.image }}
+                      className="absolute inset-0 bg-gradient-to-br from-primary/20 to-charcoal transition-transform duration-700 group-hover:scale-110"
                     />
                   )}
                   <div className="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
