@@ -12,38 +12,40 @@ const eventCategories = [
     icon: Sparkles,
     title: "Fashion Shows",
     description: "Capturing runway elegance and designer collections with cinematic precision. Our team covers backstage preparations, model walks, and the electric atmosphere of fashion events.",
-    image: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.17.14.jpeg",
-    highlights: ["Runway Coverage", "Backstage Access", "Designer Profiles", "Model Portfolios"]
+    image: "/events/fashion-shows/1a.png",
+    highlights: ["Runway Coverage", "Backstage Access", "Designer Profiles", "Model Portfolios"],
+    videos: ["https://www.youtube.com/embed/c0GSWL49sp0"]
   },
   {
     icon: Camera,
     title: "Photo Walks",
     description: "Community photography events exploring scenic locations, urban landscapes, and street photography. Join fellow photographers for creative exploration.",
-    image: "/new/aesthetic_shoots/WhatsApp Image 2026-01-13 at 11.17.16 (1).jpeg",
-    highlights: ["Location Scouting", "Group Sessions", "Skill Workshops", "Portfolio Building"]
+    image: "/events/photo-walks/20240414_183415.png",
+    highlights: ["Location Scouting", "Group Sessions", "Skill Workshops", "Portfolio Building"],
+    videos: ["https://www.youtube.com/embed/bNuj9Wkh5pE", "https://www.youtube.com/embed/33WWhJewMQU"]
   },
   {
     icon: Calendar,
     title: "Party Events",
     description: "Dynamic coverage of celebrations, corporate events, nightlife, and social gatherings. We capture the energy and emotions of your special moments.",
-    image: "/new/couple_shoots/WhatsApp Image 2026-01-13 at 11.19.18.jpeg",
-    highlights: ["Corporate Events", "Birthday Parties", "Club Photography", "Social Gatherings"]
+    image: "/events/party-events/aafw.jpg",
+    highlights: ["Corporate Events", "Birthday Parties", "Club Photography", "Social Gatherings"],
+    videos: []
   },
 ];
 
 const apnaWalaClickGallery = [
-  { type: "image", src: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.17.18 (1).jpeg", title: "Model Session" },
-  { type: "image", src: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.19.17 (1).jpeg", title: "Behind The Scenes" },
-  { type: "image", src: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.19.17 (2).jpeg", title: "Collaborative Shoot" },
-  { type: "image", src: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.19.17 (3).jpeg", title: "Team Setup" },
-  { type: "video", src: "/videos/WhatsApp Video 2026-01-13 at 11.19.21.mp4", title: "BTS Video 1", thumbnail: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.20.37.jpeg" },
-  { type: "image", src: "/new/traditional_shoots/WhatsApp Image 2026-01-13 at 11.19.03 (1).jpeg", title: "Traditional Setup" },
-  { type: "image", src: "/new/traditional_shoots/WhatsApp Image 2026-01-13 at 11.19.03.jpeg", title: "Cultural Vibes" },
-  { type: "video", src: "/videos/WhatsApp Video 2026-01-13 at 11.19.25.mp4", title: "Event Highlights", thumbnail: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.20.38.jpeg" },
-  { type: "image", src: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.17.18 (2).jpeg", title: "Creative Angles" },
-  { type: "image", src: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.19.17.jpeg", title: "Final Shots" },
-  { type: "video", src: "/videos/WhatsApp Video 2026-01-13 at 11.19.32.mp4", title: "Full Coverage", thumbnail: "/new/aesthetic_shoots/WhatsApp Image 2026-01-13 at 11.19.32.jpeg" },
-  { type: "image", src: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.17.18.jpeg", title: "Makeup Session" },
+  { type: "image", src: "/events/apnawalaclick/DSC04070.JPG", title: "Model Session" },
+  { type: "image", src: "/events/apnawalaclick/IMG_2084.JPG", title: "Behind The Scenes" },
+  { type: "image", src: "/events/apnawalaclick/IMG_2086.JPG", title: "Collaborative Shoot" },
+  { type: "image", src: "/events/apnawalaclick/IMG_4302.JPEG", title: "Team Setup" },
+  { type: "video", src: "https://www.youtube.com/embed/YPYKDmW6T3Y", title: "BTS Video 1", thumbnail: "https://img.youtube.com/vi/YPYKDmW6T3Y/maxresdefault.jpg" },
+  { type: "image", src: "/events/apnawalaclick/WhatsApp Image 2026-01-13 at 11.19.17 (3).jpeg", title: "Traditional Setup" },
+  { type: "image", src: "/events/apnawalaclick/WhatsApp Image 2026-04-06 at 15.29.05 (1).jpeg", title: "Cultural Vibes" },
+  { type: "video", src: "https://www.youtube.com/embed/0CcZut1P5Rg", title: "Event Highlights", thumbnail: "https://img.youtube.com/vi/0CcZut1P5Rg/maxresdefault.jpg" },
+  { type: "image", src: "/events/apnawalaclick/IMG_5504.jpg", title: "Portrait Shot" },
+  { type: "video", src: "/events/apnawalaclick/IMG_1568.MOV", title: "Action Glimpse 1", thumbnail: "/events/apnawalaclick/IMG_1568_thumb.jpg" },
+  { type: "video", src: "/events/apnawalaclick/IMG_5464.MOV", title: "Action Glimpse 2", thumbnail: "/events/apnawalaclick/IMG_5464_thumb.jpg" },
 ];
 
 const EventsPage = () => {
@@ -126,7 +128,7 @@ const EventsPage = () => {
               {/* Gallery */}
               <div className="mb-8">
                 <h3 className="text-xl font-heading mb-6 text-center">Behind The Scenes & Gallery</h3>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
                   {apnaWalaClickGallery.map((item, index) => (
                     <motion.div
                       key={index}
@@ -134,40 +136,38 @@ const EventsPage = () => {
                       whileInView={{ opacity: 1, scale: 1 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.4, delay: index * 0.05 }}
-                      className={`group relative rounded-lg overflow-hidden ${
-                        index === 0 || index === 7 ? "md:col-span-2 md:row-span-2" : ""
-                      } ${index === 0 || index === 7 ? "aspect-square" : "aspect-[4/3]"}`}
+                      className="group relative rounded-lg overflow-hidden break-inside-avoid shadow-lg bg-card/10"
                     >
                       {item.type === "video" ? (
                         <button
                           onClick={() => setSelectedVideo(item.src)}
-                          className="w-full h-full"
+                          className="w-full h-full block"
                         >
                           <img
                             src={item.thumbnail}
                             alt={item.title}
-                            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            className="w-full h-auto transition-transform duration-700 group-hover:scale-105"
                           />
                           <div className="absolute inset-0 bg-background/40 flex items-center justify-center">
                             <div className="w-14 h-14 rounded-full bg-primary/90 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
                               <Play className="w-5 h-5 text-primary-foreground ml-1" fill="currentColor" />
                             </div>
                           </div>
-                          <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-background to-transparent">
+                          <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-background via-background/80 to-transparent">
                             <span className="text-xs font-medium">{item.title}</span>
                           </div>
                         </button>
                       ) : (
-                        <>
+                        <div className="relative block">
                           <img
                             src={item.src}
                             alt={item.title}
-                            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            className="w-full h-auto transition-transform duration-700 group-hover:scale-105"
                           />
-                          <div className="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-3">
+                          <div className="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-3 pointer-events-none">
                             <span className="text-sm font-medium">{item.title}</span>
                           </div>
-                        </>
+                        </div>
                       )}
                     </motion.div>
                   ))}
@@ -216,13 +216,13 @@ const EventsPage = () => {
                   }`}
                 >
                   <div className={index % 2 === 1 ? "lg:order-2" : ""}>
-                    <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
+                    <div className="relative rounded-lg overflow-hidden shadow-xl bg-card/5">
                       <img
                         src={event.image}
                         alt={event.title}
-                        className="w-full h-full object-cover"
+                        className="w-full h-auto object-contain max-h-[60vh] rounded-lg"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent pointer-events-none" />
                     </div>
                   </div>
                   <div className={index % 2 === 1 ? "lg:order-1" : ""}>
@@ -241,6 +241,20 @@ const EventsPage = () => {
                         </span>
                       ))}
                     </div>
+                    {event.videos && event.videos.length > 0 && (
+                      <div className="flex flex-wrap gap-4 mt-6">
+                        {event.videos.map((videoUrl, vIdx) => (
+                          <Button 
+                            key={vIdx} 
+                            variant="secondary" 
+                            onClick={() => setSelectedVideo(videoUrl)}
+                            className="gap-2"
+                          >
+                            <Play className="w-4 h-4" /> Watch Video {event.videos.length > 1 ? vIdx + 1 : ''}
+                          </Button>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 </motion.div>
               ))}
@@ -273,12 +287,24 @@ const EventsPage = () => {
             >
               <X className="w-6 h-6 text-foreground" />
             </button>
-            <video
-              src={selectedVideo}
-              controls
-              autoPlay
-              className="w-full aspect-video"
-            />
+            {selectedVideo.includes("youtube.com") || selectedVideo.includes("youtu.be") ? (
+              <iframe
+                src={selectedVideo.includes("?") ? `${selectedVideo}&autoplay=1` : `${selectedVideo}?autoplay=1`}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+                className="w-full aspect-video"
+              ></iframe>
+            ) : (
+              <video
+                src={selectedVideo}
+                controls
+                autoPlay
+                className="w-full aspect-video"
+              />
+            )}
           </motion.div>
         </motion.div>
       )}
