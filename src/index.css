@@ -473,4 +473,22 @@
   .stagger-5 {
     animation-delay: 0.5s;
   }
+
+  /* Infinite Scrolling Marquee */
+  .animate-marquee {
+    animation: marquee 35s linear infinite;
+  }
+
+  .animate-marquee:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 }

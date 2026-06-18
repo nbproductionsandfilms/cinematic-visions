@@ -2,6 +2,7 @@ import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
 import GalaxyBackground from "@/components/layout/GalaxyBackground";
 import Hero from "@/components/sections/Hero";
+import Clients from "@/components/sections/Clients";
 import About from "@/components/sections/About";
 import Services from "@/components/sections/Services";
 import Portfolio from "@/components/sections/Portfolio";
@@ -19,6 +20,7 @@ const Index = () => {
       <main className="min-h-screen">
         <Navigation />
         <Hero />
+        <Clients />
         <About />
         <Services />
         <Portfolio />

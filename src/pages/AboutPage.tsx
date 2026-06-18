@@ -2,6 +2,7 @@ import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
 import GalaxyBackground from "@/components/layout/GalaxyBackground";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 const AboutPage = () => {
   const stats = [
@@ -10,6 +11,12 @@ const AboutPage = () => {
     { value: "5+", label: "Years Experience" },
     { value: "15+", label: "Awards Won" },
   ];
+
+  useEffect(() => {
+    document.title = "About Us | N B Productions & Films";
+    const meta = document.querySelector('meta[name="description"]');
+    if (meta) meta.setAttribute("content", "Learn about N B Productions & Films — a creative studio dedicated to cinematic photography, videography, and visual storytelling since 2019.");
+  }, []);
 
   return (
     <>

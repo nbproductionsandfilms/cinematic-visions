@@ -1,24 +1,62 @@
 import { motion, useInView } from "framer-motion";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Send, Mail, Phone, MapPin } from "lucide-react";
+import { Send, Mail, Phone, MapPin, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
+
+const WEB3FORMS_ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY as string;
+
+const services = [
+  "Cinematic Photography",
+  "Motion Picture & Videography",
+  "Brand Identity & Logo Design",
+  "Editorial Posters & Visuals",
+  "Digital Cover Art & Thumbnails",
+  "Print Media & Brochures",
+  "Presentations & Pitch Decks",
+  "Product Showcase & Carousels",
+  "Short-Form Cinema & Reels",
+  "Other",
+];
+
+type Status = "idle" | "loading" | "success" | "error";
 
 const Contact = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const [status, setStatus] = useState<Status>("idle");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    subject: "",
+    phone: "",
+    service: "",
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const set = (field: string) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) =>
+    setFormData((prev) => ({ ...prev, [field]: e.target.value }));
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log("Form submitted:", formData);
+    setStatus("loading");
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          subject: `New Enquiry from ${formData.name} — ${formData.service || "General"}`,
+          from_name: "NB Productions Website",
+          ...formData,
+        }),
+      });
+      const data = await res.json();
+      setStatus(data.success ? "success" : "error");
+      if (data.success) setFormData({ name: "", email: "", phone: "", service: "", message: "" });
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -42,56 +80,73 @@ const Contact = () => {
               and we'll get back to you as soon as possible.
             </p>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <Input
-                    placeholder="Your Name"
-                    value={formData.name}
-                    onChange={(e) =>
-                      setFormData({ ...formData, name: e.target.value })
-                    }
-                    className="bg-card/30 backdrop-blur-sm border-border/50 focus:border-primary"
-                  />
+            {status === "success" ? (
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                className="flex flex-col items-center justify-center gap-4 p-10 bg-primary/10 border border-primary/30 rounded-2xl text-center"
+              >
+                <CheckCircle2 size={48} className="text-primary" />
+                <h3 className="text-xl font-heading text-foreground">Message Sent!</h3>
+                <p className="text-muted-foreground">Thank you for reaching out. We'll get back to you within 24 hours.</p>
+                <Button variant="outline" onClick={() => setStatus("idle")}>Send Another</Button>
+              </motion.div>
+            ) : (
+              <form onSubmit={handleSubmit} className="space-y-5">
+                <div className="grid md:grid-cols-2 gap-5">
+                  <div>
+                    <label className="block text-xs text-muted-foreground mb-1.5 uppercase tracking-wider">Full Name *</label>
+                    <Input required placeholder="Your Name" value={formData.name} onChange={set("name")}
+                      className="bg-card/30 backdrop-blur-sm border-border/50 focus:border-primary" />
+                  </div>
+                  <div>
+                    <label className="block text-xs text-muted-foreground mb-1.5 uppercase tracking-wider">Email *</label>
+                    <Input required type="email" placeholder="you@example.com" value={formData.email} onChange={set("email")}
+                      className="bg-card/30 backdrop-blur-sm border-border/50 focus:border-primary" />
+                  </div>
+                </div>
+                <div className="grid md:grid-cols-2 gap-5">
+                  <div>
+                    <label className="block text-xs text-muted-foreground mb-1.5 uppercase tracking-wider">Phone</label>
+                    <Input type="tel" placeholder="+91 XXXXX XXXXX" value={formData.phone} onChange={set("phone")}
+                      className="bg-card/30 backdrop-blur-sm border-border/50 focus:border-primary" />
+                  </div>
+                  <div>
+                    <label className="block text-xs text-muted-foreground mb-1.5 uppercase tracking-wider">Service Needed</label>
+                    <select
+                      value={formData.service}
+                      onChange={set("service")}
+                      className="w-full h-10 px-3 py-2 rounded-md text-sm bg-card/30 backdrop-blur-sm border border-border/50 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary text-foreground transition-colors"
+                    >
+                      <option value="" className="bg-background">Select a service…</option>
+                      {services.map((s) => (
+                        <option key={s} value={s} className="bg-background">{s}</option>
+                      ))}
+                    </select>
+                  </div>
                 </div>
                 <div>
-                  <Input
-                    type="email"
-                    placeholder="Your Email"
-                    value={formData.email}
-                    onChange={(e) =>
-                      setFormData({ ...formData, email: e.target.value })
-                    }
-                    className="bg-card/30 backdrop-blur-sm border-border/50 focus:border-primary"
-                  />
+                  <label className="block text-xs text-muted-foreground mb-1.5 uppercase tracking-wider">Message *</label>
+                  <Textarea required rows={5} placeholder="Tell us about your project…" value={formData.message} onChange={set("message")}
+                    className="bg-card/30 backdrop-blur-sm border-border/50 focus:border-primary resize-none" />
                 </div>
-              </div>
-              <div>
-                <Input
-                  placeholder="Subject"
-                  value={formData.subject}
-                  onChange={(e) =>
-                    setFormData({ ...formData, subject: e.target.value })
-                  }
-                  className="bg-card/30 backdrop-blur-sm border-border/50 focus:border-primary"
-                />
-              </div>
-              <div>
-                <Textarea
-                  placeholder="Your Message"
-                  rows={6}
-                  value={formData.message}
-                  onChange={(e) =>
-                    setFormData({ ...formData, message: e.target.value })
-                  }
-                  className="bg-card/30 backdrop-blur-sm border-border/50 focus:border-primary resize-none"
-                />
-              </div>
-              <Button type="submit" size="lg" className="w-full md:w-auto">
-                <Send size={16} className="mr-2" />
-                Send Message
-              </Button>
-            </form>
+
+                {status === "error" && (
+                  <div className="flex items-center gap-2 text-red-400 text-sm">
+                    <AlertCircle size={16} />
+                    <span>Something went wrong. Please try again or email us directly.</span>
+                  </div>
+                )}
+
+                <Button type="submit" size="lg" className="w-full md:w-auto" disabled={status === "loading"}>
+                  {status === "loading" ? (
+                    <><Loader2 size={16} className="mr-2 animate-spin" /> Sending…</>
+                  ) : (
+                    <><Send size={16} className="mr-2" /> Send Message</>
+                  )}
+                </Button>
+              </form>
+            )}
           </motion.div>
 
           {/* Right - Contact Info */}
@@ -111,10 +166,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground mb-1">Email Us</p>
-                    <a
-                      href="mailto:nbproductionsandfilms@gmail.com"
-                      className="text-foreground hover:text-primary transition-colors"
-                    >
+                    <a href="mailto:nbproductionsandfilms@gmail.com"
+                      className="text-foreground hover:text-primary transition-colors">
                       nbproductionsandfilms@gmail.com
                     </a>
                   </div>
@@ -126,10 +179,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground mb-1">Call Us</p>
-                    <a
-                      href="tel:+917709477615"
-                      className="text-foreground hover:text-primary transition-colors"
-                    >
+                    <a href="tel:+917709477615"
+                      className="text-foreground hover:text-primary transition-colors">
                       +91 77094 77615
                     </a>
                   </div>
@@ -141,11 +192,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground mb-1">Visit Us</p>
-                    <p className="text-foreground">
-                      Bhosari, Pune - 411039
-                      <br />
-                      India
-                    </p>
+                    <p className="text-foreground">Bhosari, Pune - 411039<br />India</p>
                   </div>
                 </div>
               </div>
@@ -166,7 +213,7 @@ const Contact = () => {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Sunday</span>
-                    <span className="text-foreground">Closed</span>
+                    <span className="text-foreground text-red-400/80">Closed</span>
                   </div>
                 </div>
               </div>

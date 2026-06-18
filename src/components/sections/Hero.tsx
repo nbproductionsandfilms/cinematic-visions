@@ -11,13 +11,18 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
+      {/* Background Video */}
       <div className="absolute inset-0">
-        <img
-          src={heroImage}
-          alt="Cinematic background"
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster={heroImage}
           className="w-full h-full object-cover opacity-60"
-        />
+        >
+          <source src="/videos/WhatsApp Video 2026-01-13 at 11.19.21.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/80 to-background" />
       </div>
 
