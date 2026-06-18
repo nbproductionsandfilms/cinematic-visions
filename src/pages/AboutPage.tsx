@@ -80,14 +80,25 @@ const AboutPage = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="relative aspect-square"
+              className="relative aspect-[4/5] md:aspect-square"
             >
-              <div className="absolute inset-0 bg-card/50 backdrop-blur-sm rounded-lg overflow-hidden">
-                <div className="absolute inset-4 border border-primary/30 rounded" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-9xl font-heading text-primary/20">NB</span>
-                </div>
+              <div className="absolute inset-0 rounded-lg overflow-hidden shadow-2xl bg-card/5">
+                <img
+                  src="/founders/about-us.png"
+                  alt="N B Productions & Films Team"
+                  className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-tr from-background/60 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute inset-4 border border-primary/20 rounded pointer-events-none" />
               </div>
+              <motion.div
+                animate={{ y: [0, -10, 0] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground px-6 py-4 rounded shadow-lg shadow-primary/20"
+              >
+                <p className="font-heading text-xl">Est. 2019</p>
+                <p className="text-sm opacity-80">N B Productions</p>
+              </motion.div>
             </motion.div>
           </div>
         </div>

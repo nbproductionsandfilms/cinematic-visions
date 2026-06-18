@@ -12,6 +12,7 @@ const services = [
     icon: Camera,
     title: "Photography",
     description: "Professional photography services for all occasions.",
+    image: "/services/Photography.png",
     features: [
       "Wedding Photography",
       "Product Photography",
@@ -22,73 +23,78 @@ const services = [
     ],
   },
   {
-    id: "videography",
+    id: "videography-reels",
     icon: Video,
-    title: "Videography",
-    description: "Creative video production for every platform.",
+    title: "Videography & Reels",
+    description: "Creative video production and editing for every platform.",
+    image: "/services/Videography & Reels.png",
     features: [
+      "Video Editing & Reels",
       "Social Media Content",
       "Promotional Videos",
       "Event Documentation",
       "Interview Production",
-      "Training Videos",
       "Behind-the-Scenes",
     ],
   },
   {
-    id: "cinematography",
+    id: "cinematography-production",
     icon: Film,
-    title: "Cinematography",
+    title: "Cinematography & Production",
     description: "Cinematic storytelling with artistic direction.",
+    image: "/services/Cinematography & Production.png",
     features: [
+      "Creative Production",
       "Brand Films",
       "Documentary Production",
       "Commercial Spots",
       "Music Videos",
       "Short Films",
-      "Wedding Films",
     ],
   },
   {
-    id: "design",
+    id: "graphic-branding",
     icon: Palette,
-    title: "Graphic Design",
-    description: "Visual identity and branding solutions.",
+    title: "Graphic & Branding Design",
+    description: "Visual identity and creative branding solutions.",
+    image: "/services/Graphic & Branding Design.png",
     features: [
+      "Graphic Design",
+      "Branding & Identity Design",
       "Logo Design",
-      "Brand Identity",
       "Poster Design",
       "Brochures",
-      "Business Cards",
       "Packaging Design",
     ],
   },
   {
-    id: "digital",
+    id: "content-social",
     icon: FileImage,
-    title: "Digital Content",
-    description: "Optimized content for digital platforms.",
+    title: "Content & Social Media",
+    description: "Engaging content creation and full-service social media management.",
+    image: "/services/Content & Social Media.png",
     features: [
+      "Social Media Management",
+      "Content Creation",
       "YouTube Thumbnails",
       "Instagram Content",
       "Social Media Graphics",
-      "Banner Ads",
-      "Email Templates",
       "Web Graphics",
     ],
   },
   {
-    id: "marketing",
+    id: "digital-marketing",
     icon: Megaphone,
-    title: "Marketing",
-    description: "Strategic visual content for campaigns.",
+    title: "Digital Marketing",
+    description: "Strategic marketing and performance campaigns.",
+    image: "/services/Digital Marketing.png",
     features: [
+      "Digital Marketing",
+      "Performance Marketing (Meta/Google Ads)",
+      "Email Marketing",
       "Campaign Strategy",
-      "Content Planning",
       "Ad Creative",
       "Performance Analysis",
-      "A/B Testing",
-      "Brand Consulting",
     ],
   },
 ];
@@ -157,14 +163,14 @@ const ServicesPage = () => {
                   </Button>
                 </div>
                 
-                <div className={`relative aspect-[4/3] ${index % 2 === 1 ? "lg:order-1" : ""}`}>
-                  <div className="absolute inset-0 bg-card/50 backdrop-blur-sm rounded-lg overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent" />
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <service.icon size={120} className="text-primary/10" />
-                    </div>
-                    <div className="absolute inset-4 border border-primary/20 rounded" />
-                  </div>
+                <div className={`relative aspect-[4/3] rounded-lg overflow-hidden shadow-2xl bg-card/5 ${index % 2 === 1 ? "lg:order-1" : ""}`}>
+                  <img 
+                    src={service.image} 
+                    alt={service.title} 
+                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent pointer-events-none" />
+                  <div className="absolute inset-4 border border-primary/20 rounded pointer-events-none" />
                 </div>
               </motion.div>
             ))}

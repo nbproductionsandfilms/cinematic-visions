@@ -21,7 +21,7 @@ const Hero = () => {
           poster={heroImage}
           className="w-full h-full object-cover opacity-60"
         >
-          <source src="/videos/WhatsApp Video 2026-01-13 at 11.19.21.mp4" type="video/mp4" />
+          <source src="/videos/WhatsApp Video 2026-01-15 at 11.39.40.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/80 to-background" />
       </div>

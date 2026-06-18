@@ -50,7 +50,7 @@ const Clients = () => {
                 <img
                   src={logo.path}
                   alt={`${logo.name} logo`}
-                  className="max-h-16 md:max-h-20 max-w-full object-contain filter grayscale brightness-125 opacity-70 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500"
+                  className="max-h-16 md:max-h-20 max-w-full object-contain filter transition-all duration-500 hover:scale-105"
                 />
               </div>
             ))}

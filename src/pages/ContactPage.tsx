@@ -13,13 +13,15 @@ const WEB3FORMS_ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY as string
 const SERVICES = [
   "Cinematic Photography",
   "Motion Picture & Videography",
-  "Brand Identity & Logo Design",
-  "Editorial Posters & Visuals",
-  "Digital Cover Art & Thumbnails",
-  "Print Media & Brochures",
-  "Presentations & Pitch Decks",
-  "Product Showcase & Carousels",
-  "Short-Form Cinema & Reels",
+  "Video Editing & Reels",
+  "Graphic Design",
+  "Branding & Identity Design",
+  "Content Creation",
+  "Social Media Management",
+  "Digital Marketing",
+  "Performance Marketing (Ads)",
+  "Email Marketing",
+  "Creative Production",
   "Other",
 ];
 

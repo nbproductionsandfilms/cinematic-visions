@@ -246,11 +246,9 @@ const EventsPage = () => {
                         {event.videos.map((videoUrl, vIdx) => (
                           <Button 
                             key={vIdx} 
-                            variant="secondary" 
                             onClick={() => setSelectedVideo(videoUrl)}
-                            className="gap-2"
-                          >
-                            <Play className="w-4 h-4" /> Watch Video {event.videos.length > 1 ? vIdx + 1 : ''}
+                            className="group bg-primary text-primary-foreground shadow-[0_0_15px_rgba(212,175,55,0.4)] hover:shadow-[0_0_25px_rgba(212,175,55,0.8)] hover:bg-primary/90 hover:scale-105 border border-primary transition-all duration-300 font-semibold"
+                          >  <Play className="w-4 h-4" /> Watch Video {event.videos.length > 1 ? vIdx + 1 : ''}
                           </Button>
                         ))}
                       </div>
