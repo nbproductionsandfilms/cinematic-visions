@@ -513,14 +513,14 @@ const PortfolioPage = () => {
                   </div>
                 ) : selectedItemData.isLogo ? (
                   <div className="glass-gold rounded-3xl p-12 w-full aspect-square max-w-md flex items-center justify-center">
-                    <img
+                    <img loading="lazy"
                       src={selectedItemData.image}
                       alt={selectedItemData.title}
                       className="max-w-full max-h-full object-contain filter drop-shadow-2xl"
                     />
                   </div>
                 ) : selectedItemData.videoUrl ? (
-                  <video
+                  <video preload="none"
                     src={selectedItemData.videoUrl}
                     className="max-w-full max-h-[70vh] w-auto h-auto object-contain rounded-2xl shadow-2xl border border-white/5 bg-black/40"
                     controls
@@ -528,7 +528,7 @@ const PortfolioPage = () => {
                     playsInline
                   />
                 ) : selectedItemData.isVideo && selectedItemData.image ? (
-                  <video
+                  <video preload="none"
                     src={selectedItemData.image}
                     className="max-w-full max-h-[70vh] w-auto h-auto object-contain rounded-2xl shadow-2xl border border-white/5 bg-black/40"
                     controls
@@ -536,7 +536,7 @@ const PortfolioPage = () => {
                     playsInline
                   />
                 ) : selectedItemData.image ? (
-                  <img
+                  <img loading="lazy"
                     src={selectedItemData.image}
                     alt={selectedItemData.title}
                     className="max-w-full max-h-[70vh] w-auto h-auto object-contain rounded-2xl shadow-2xl border border-white/5"

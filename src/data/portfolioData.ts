@@ -33,123 +33,123 @@ export const categories = [
 
 export const portfolioItems: PortfolioItem[] = [
   // --- Kids & Baby Shoots (Maternity & Childhood + Cinematic Photography) ---
-  { id: 53, title: "Kids Shoot 1", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.17.15 (1).jpeg", featured: true, date: "2025-06" },
-  { id: 54, title: "Kids Shoot 2", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.17.15 (2).jpeg", date: "2025-06" },
-  { id: 55, title: "Kids Shoot 3", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.17.15.jpeg", date: "2025-06" },
-  { id: 56, title: "Kids Shoot 4", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.17.19 (1).jpeg", date: "2025-06" },
-  { id: 57, title: "Kids Shoot 5", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.17.19 (2).jpeg", date: "2025-06" },
-  { id: 58, title: "Kids Shoot 6", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.17.19.jpeg", date: "2025-06" },
-  { id: 59, title: "Kids Shoot 7", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.17.20 (1).jpeg", date: "2025-06" },
-  { id: 60, title: "Kids Shoot 8", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.17.20 (2).jpeg", date: "2025-06" },
-  { id: 61, title: "Kids Shoot 9", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.17.20 (3).jpeg", date: "2025-06" },
-  { id: 62, title: "Kids Shoot 10", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.17.20.jpeg", date: "2025-06" },
-  { id: 63, title: "Kids Shoot 11", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.17.21 (1).jpeg", date: "2025-06" },
-  { id: 64, title: "Kids Shoot 12", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.17.21 (2).jpeg", date: "2025-06" },
-  { id: 65, title: "Kids Shoot 13", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.17.21 (3).jpeg", date: "2025-06" },
-  { id: 66, title: "Kids Shoot 14", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.17.21.jpeg", date: "2025-06" },
-  { id: 67, title: "Kids Shoot 15", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.19.18 (2).jpeg", date: "2025-06" },
-  { id: 68, title: "Kids Shoot 16", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.19.18 (3).jpeg", date: "2025-06" },
-  { id: 69, title: "Kids Shoot 17", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.19.19 (1).jpeg", date: "2025-06" },
-  { id: 70, title: "Kids Shoot 18", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.19.19 (2).jpeg", date: "2025-06" },
-  { id: 71, title: "Kids Shoot 19", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.19.19 (3).jpeg", date: "2025-06" },
-  { id: 72, title: "Kids Shoot 20", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.19.19.jpeg", date: "2025-06" },
+  { id: 53, title: "Kids Shoot 1", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.17.15 (1).webp", featured: true, date: "2025-06" },
+  { id: 54, title: "Kids Shoot 2", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.17.15 (2).webp", date: "2025-06" },
+  { id: 55, title: "Kids Shoot 3", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.17.15.webp", date: "2025-06" },
+  { id: 56, title: "Kids Shoot 4", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.17.19 (1).webp", date: "2025-06" },
+  { id: 57, title: "Kids Shoot 5", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.17.19 (2).webp", date: "2025-06" },
+  { id: 58, title: "Kids Shoot 6", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.17.19.webp", date: "2025-06" },
+  { id: 59, title: "Kids Shoot 7", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.17.20 (1).webp", date: "2025-06" },
+  { id: 60, title: "Kids Shoot 8", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.17.20 (2).webp", date: "2025-06" },
+  { id: 61, title: "Kids Shoot 9", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.17.20 (3).webp", date: "2025-06" },
+  { id: 62, title: "Kids Shoot 10", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.17.20.webp", date: "2025-06" },
+  { id: 63, title: "Kids Shoot 11", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.17.21 (1).webp", date: "2025-06" },
+  { id: 64, title: "Kids Shoot 12", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.17.21 (2).webp", date: "2025-06" },
+  { id: 65, title: "Kids Shoot 13", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.17.21 (3).webp", date: "2025-06" },
+  { id: 66, title: "Kids Shoot 14", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.17.21.webp", date: "2025-06" },
+  { id: 67, title: "Kids Shoot 15", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.19.18 (2).webp", date: "2025-06" },
+  { id: 68, title: "Kids Shoot 16", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.19.18 (3).webp", date: "2025-06" },
+  { id: 69, title: "Kids Shoot 17", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.19.19 (1).webp", date: "2025-06" },
+  { id: 70, title: "Kids Shoot 18", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.19.19 (2).webp", date: "2025-06" },
+  { id: 71, title: "Kids Shoot 19", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.19.19 (3).webp", date: "2025-06" },
+  { id: 72, title: "Kids Shoot 20", categories: ["Cinematic Photography", "Maternity & Childhood"], image: "/new/Kids_and_baby_shoots/WhatsApp Image 2026-01-13 at 11.19.19.webp", date: "2025-06" },
 
   // --- Aesthetic Shoots (Fine Art & Aesthetic + Cinematic Photography) ---
-  { id: 73, title: "Aesthetic Shoot 1", categories: ["Cinematic Photography", "Fine Art & Aesthetic"], image: "/new/aesthetic_shoots/WhatsApp Image 2026-01-13 at 11.17.16 (1).jpeg", date: "2025-05" },
-  { id: 74, title: "Aesthetic Shoot 2", categories: ["Cinematic Photography", "Fine Art & Aesthetic"], image: "/new/aesthetic_shoots/WhatsApp Image 2026-01-13 at 11.17.16 (2).jpeg", date: "2025-05" },
-  { id: 75, title: "Aesthetic Shoot 3", categories: ["Cinematic Photography", "Fine Art & Aesthetic"], image: "/new/aesthetic_shoots/WhatsApp Image 2026-01-13 at 11.17.16 (3).jpeg", date: "2025-05" },
-  { id: 76, title: "Aesthetic Shoot 4", categories: ["Cinematic Photography", "Fine Art & Aesthetic"], image: "/new/aesthetic_shoots/WhatsApp Image 2026-01-13 at 11.17.17 (1).jpeg", date: "2025-05" },
-  { id: 77, title: "Aesthetic Shoot 5", categories: ["Cinematic Photography", "Fine Art & Aesthetic"], image: "/new/aesthetic_shoots/WhatsApp Image 2026-01-13 at 11.17.17.jpeg", date: "2025-05" },
-  { id: 78, title: "Aesthetic Shoot 6", categories: ["Cinematic Photography", "Fine Art & Aesthetic"], image: "/new/aesthetic_shoots/WhatsApp Image 2026-01-13 at 11.19.32.jpeg", date: "2025-05" },
+  { id: 73, title: "Aesthetic Shoot 1", categories: ["Cinematic Photography", "Fine Art & Aesthetic"], image: "/new/aesthetic_shoots/WhatsApp Image 2026-01-13 at 11.17.16 (1).webp", date: "2025-05" },
+  { id: 74, title: "Aesthetic Shoot 2", categories: ["Cinematic Photography", "Fine Art & Aesthetic"], image: "/new/aesthetic_shoots/WhatsApp Image 2026-01-13 at 11.17.16 (2).webp", date: "2025-05" },
+  { id: 75, title: "Aesthetic Shoot 3", categories: ["Cinematic Photography", "Fine Art & Aesthetic"], image: "/new/aesthetic_shoots/WhatsApp Image 2026-01-13 at 11.17.16 (3).webp", date: "2025-05" },
+  { id: 76, title: "Aesthetic Shoot 4", categories: ["Cinematic Photography", "Fine Art & Aesthetic"], image: "/new/aesthetic_shoots/WhatsApp Image 2026-01-13 at 11.17.17 (1).webp", date: "2025-05" },
+  { id: 77, title: "Aesthetic Shoot 5", categories: ["Cinematic Photography", "Fine Art & Aesthetic"], image: "/new/aesthetic_shoots/WhatsApp Image 2026-01-13 at 11.17.17.webp", date: "2025-05" },
+  { id: 78, title: "Aesthetic Shoot 6", categories: ["Cinematic Photography", "Fine Art & Aesthetic"], image: "/new/aesthetic_shoots/WhatsApp Image 2026-01-13 at 11.19.32.webp", date: "2025-05" },
 
   // --- Couple Shoots (Couples & Romance + Cinematic Photography) ---
-  { id: 79, title: "Couple Shoot 1", categories: ["Cinematic Photography", "Couples & Romance"], image: "/new/couple_shoots/WhatsApp Image 2026-01-13 at 11.19.18 (1).jpeg", featured: true, date: "2025-04" },
-  { id: 80, title: "Couple Shoot 2", categories: ["Cinematic Photography", "Couples & Romance"], image: "/new/couple_shoots/WhatsApp Image 2026-01-13 at 11.19.18.jpeg", date: "2025-04" },
+  { id: 79, title: "Couple Shoot 1", categories: ["Cinematic Photography", "Couples & Romance"], image: "/new/couple_shoots/WhatsApp Image 2026-01-13 at 11.19.18 (1).webp", featured: true, date: "2025-04" },
+  { id: 80, title: "Couple Shoot 2", categories: ["Cinematic Photography", "Couples & Romance"], image: "/new/couple_shoots/WhatsApp Image 2026-01-13 at 11.19.18.webp", date: "2025-04" },
 
   // --- Model Shoots (Fashion & Editorial + Cinematic Photography) ---
-  { id: 81, title: "Model Shoot 1", categories: ["Cinematic Photography", "Fashion & Editorial"], image: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.17.14 (1).jpeg", date: "2025-03" },
-  { id: 82, title: "Model Shoot 2", categories: ["Cinematic Photography", "Fashion & Editorial"], image: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.17.14.jpeg", date: "2025-03" },
-  { id: 83, title: "Model Shoot 3", categories: ["Cinematic Photography", "Fashion & Editorial"], image: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.17.17 (2).jpeg", date: "2025-03" },
-  { id: 84, title: "Model Shoot 4", categories: ["Cinematic Photography", "Fashion & Editorial"], image: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.17.17 (3).jpeg", date: "2025-03" },
-  { id: 85, title: "Model Shoot 5", categories: ["Cinematic Photography", "Fashion & Editorial"], image: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.17.18 (1).jpeg", date: "2025-03" },
-  { id: 86, title: "Model Shoot 6", categories: ["Cinematic Photography", "Fashion & Editorial"], image: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.17.18 (2).jpeg", date: "2025-03" },
-  { id: 87, title: "Model Shoot 7", categories: ["Cinematic Photography", "Fashion & Editorial"], image: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.17.18.jpeg", date: "2025-03" },
-  { id: 88, title: "Model Shoot 8", categories: ["Cinematic Photography", "Fashion & Editorial"], image: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.19.17 (1).jpeg", date: "2025-03" },
-  { id: 89, title: "Model Shoot 9", categories: ["Cinematic Photography", "Fashion & Editorial"], image: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.19.17 (2).jpeg", date: "2025-03" },
-  { id: 90, title: "Model Shoot 10", categories: ["Cinematic Photography", "Fashion & Editorial"], image: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.19.17 (3).jpeg", date: "2025-03" },
-  { id: 91, title: "Model Shoot 11", categories: ["Cinematic Photography", "Fashion & Editorial"], image: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.19.17.jpeg", date: "2025-03" },
-  { id: 92, title: "Model Shoot 12", categories: ["Cinematic Photography", "Fashion & Editorial"], image: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.20.37.jpeg", date: "2025-03" },
-  { id: 93, title: "Model Shoot 13", categories: ["Cinematic Photography", "Fashion & Editorial"], image: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.20.38.jpeg", date: "2025-03" },
+  { id: 81, title: "Model Shoot 1", categories: ["Cinematic Photography", "Fashion & Editorial"], image: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.17.14 (1).webp", date: "2025-03" },
+  { id: 82, title: "Model Shoot 2", categories: ["Cinematic Photography", "Fashion & Editorial"], image: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.17.14.webp", date: "2025-03" },
+  { id: 83, title: "Model Shoot 3", categories: ["Cinematic Photography", "Fashion & Editorial"], image: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.17.17 (2).webp", date: "2025-03" },
+  { id: 84, title: "Model Shoot 4", categories: ["Cinematic Photography", "Fashion & Editorial"], image: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.17.17 (3).webp", date: "2025-03" },
+  { id: 85, title: "Model Shoot 5", categories: ["Cinematic Photography", "Fashion & Editorial"], image: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.17.18 (1).webp", date: "2025-03" },
+  { id: 86, title: "Model Shoot 6", categories: ["Cinematic Photography", "Fashion & Editorial"], image: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.17.18 (2).webp", date: "2025-03" },
+  { id: 87, title: "Model Shoot 7", categories: ["Cinematic Photography", "Fashion & Editorial"], image: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.17.18.webp", date: "2025-03" },
+  { id: 88, title: "Model Shoot 8", categories: ["Cinematic Photography", "Fashion & Editorial"], image: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.19.17 (1).webp", date: "2025-03" },
+  { id: 89, title: "Model Shoot 9", categories: ["Cinematic Photography", "Fashion & Editorial"], image: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.19.17 (2).webp", date: "2025-03" },
+  { id: 90, title: "Model Shoot 10", categories: ["Cinematic Photography", "Fashion & Editorial"], image: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.19.17 (3).webp", date: "2025-03" },
+  { id: 91, title: "Model Shoot 11", categories: ["Cinematic Photography", "Fashion & Editorial"], image: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.19.17.webp", date: "2025-03" },
+  { id: 92, title: "Model Shoot 12", categories: ["Cinematic Photography", "Fashion & Editorial"], image: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.20.37.webp", date: "2025-03" },
+  { id: 93, title: "Model Shoot 13", categories: ["Cinematic Photography", "Fashion & Editorial"], image: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.20.38.webp", date: "2025-03" },
 
   // --- Traditional Shoots (Heritage & Traditional + Cinematic Photography) ---
-  { id: 94, title: "Traditional Shoot 1", categories: ["Cinematic Photography", "Heritage & Traditional"], image: "/new/traditional_shoots/WhatsApp Image 2026-01-13 at 11.17.15 (3).jpeg", date: "2025-02" },
-  { id: 95, title: "Traditional Shoot 2", categories: ["Cinematic Photography", "Heritage & Traditional"], image: "/new/traditional_shoots/WhatsApp Image 2026-01-13 at 11.17.16.jpeg", date: "2025-02" },
-  { id: 96, title: "Traditional Shoot 3", categories: ["Cinematic Photography", "Heritage & Traditional"], image: "/new/traditional_shoots/WhatsApp Image 2026-01-13 at 11.19.03 (1).jpeg", date: "2025-02" },
-  { id: 97, title: "Traditional Shoot 4", categories: ["Cinematic Photography", "Heritage & Traditional"], image: "/new/traditional_shoots/WhatsApp Image 2026-01-13 at 11.19.03.jpeg", date: "2025-02" },
-  { id: 98, title: "Traditional Shoot 5", categories: ["Cinematic Photography", "Heritage & Traditional"], image: "/new/traditional_shoots/WhatsApp Image 2026-01-13 at 11.19.04.jpeg", date: "2025-02" },
+  { id: 94, title: "Traditional Shoot 1", categories: ["Cinematic Photography", "Heritage & Traditional"], image: "/new/traditional_shoots/WhatsApp Image 2026-01-13 at 11.17.15 (3).webp", date: "2025-02" },
+  { id: 95, title: "Traditional Shoot 2", categories: ["Cinematic Photography", "Heritage & Traditional"], image: "/new/traditional_shoots/WhatsApp Image 2026-01-13 at 11.17.16.webp", date: "2025-02" },
+  { id: 96, title: "Traditional Shoot 3", categories: ["Cinematic Photography", "Heritage & Traditional"], image: "/new/traditional_shoots/WhatsApp Image 2026-01-13 at 11.19.03 (1).webp", date: "2025-02" },
+  { id: 97, title: "Traditional Shoot 4", categories: ["Cinematic Photography", "Heritage & Traditional"], image: "/new/traditional_shoots/WhatsApp Image 2026-01-13 at 11.19.03.webp", date: "2025-02" },
+  { id: 98, title: "Traditional Shoot 5", categories: ["Cinematic Photography", "Heritage & Traditional"], image: "/new/traditional_shoots/WhatsApp Image 2026-01-13 at 11.19.04.webp", date: "2025-02" },
 
   // --- Logos & Badges (Brand Identity & Insignia) ---
-  { id: 1, title: "Chairman Saheb Brandmark", categories: ["Brand Identity & Insignia"], image: "/logos/Chairman_saheb_logo_white.png", date: "2024-12" },
-  { id: 2, title: "Infinite Waves Identity", categories: ["Brand Identity & Insignia"], image: "/logos/Infinite-Waves-logo.png", date: "2024-11" },
-  { id: 3, title: "PN Computers Identity", categories: ["Brand Identity & Insignia"], image: "/logos/PN Computers without bg.png", date: "2024-10" },
-  { id: 4, title: "Pranav Multi-purpose Society Logo", categories: ["Brand Identity & Insignia"], image: "/logos/Pranav Multi-purpose Society LOGO-transperent.png", date: "2024-09" },
-  { id: 5, title: "Shinde Industrial Suppliers Identity", categories: ["Brand Identity & Insignia"], image: "/logos/Shinde Industrial Suppliers.png", date: "2024-08" },
-  { id: 6, title: "Patidar Properties Logo", categories: ["Brand Identity & Insignia"], image: "/logos/patidar-properties-logo.png", date: "2024-07" },
-  { id: 7, title: "The Bhartiya Trekkers Badge", categories: ["Brand Identity & Insignia"], image: "/logos/the-bhartiya-trekkers.png", date: "2024-06" },
+  { id: 1, title: "Chairman Saheb Brandmark", categories: ["Brand Identity & Insignia"], image: "/logos/Chairman_saheb_logo_white.webp", date: "2024-12" },
+  { id: 2, title: "Infinite Waves Identity", categories: ["Brand Identity & Insignia"], image: "/logos/Infinite-Waves-logo.webp", date: "2024-11" },
+  { id: 3, title: "PN Computers Identity", categories: ["Brand Identity & Insignia"], image: "/logos/PN Computers without bg.webp", date: "2024-10" },
+  { id: 4, title: "Pranav Multi-purpose Society Logo", categories: ["Brand Identity & Insignia"], image: "/logos/Pranav Multi-purpose Society LOGO-transperent.webp", date: "2024-09" },
+  { id: 5, title: "Shinde Industrial Suppliers Identity", categories: ["Brand Identity & Insignia"], image: "/logos/Shinde Industrial Suppliers.webp", date: "2024-08" },
+  { id: 6, title: "Patidar Properties Logo", categories: ["Brand Identity & Insignia"], image: "/logos/patidar-properties-logo.webp", date: "2024-07" },
+  { id: 7, title: "The Bhartiya Trekkers Badge", categories: ["Brand Identity & Insignia"], image: "/logos/the-bhartiya-trekkers.webp", date: "2024-06" },
   
   // New TBT badges
-  { id: 110, title: "The Bhartiya Trekkers - K2S Gold Crest", categories: ["Brand Identity & Insignia"], image: "/logos/tbt-k2s-badge-1.png", featured: true, date: "2026-04" },
-  { id: 111, title: "The Bhartiya Trekkers - K2S Dark Shield", categories: ["Brand Identity & Insignia"], image: "/logos/tbt-k2s-badge-2.png", date: "2026-04" },
+  { id: 110, title: "The Bhartiya Trekkers - K2S Gold Crest", categories: ["Brand Identity & Insignia"], image: "/logos/tbt-k2s-badge-1.webp", featured: true, date: "2026-04" },
+  { id: 111, title: "The Bhartiya Trekkers - K2S Dark Shield", categories: ["Brand Identity & Insignia"], image: "/logos/tbt-k2s-badge-2.webp", date: "2026-04" },
   
   // New MotoTrek logo
-  { id: 112, title: "MotoTrek Stores Emblem", categories: ["Brand Identity & Insignia"], image: "/logos/MotoTrek Stores Logo.jpeg", featured: true, date: "2026-01" },
+  { id: 112, title: "MotoTrek Stores Emblem", categories: ["Brand Identity & Insignia"], image: "/logos/MotoTrek Stores Logo.webp", featured: true, date: "2026-01" },
 
   // --- YouTube Thumbnails (Digital Cover Art) ---
-  { id: 8, title: "Digital Cover Art 1", categories: ["Digital Cover Art"], image: "/youtube-thumbnails/IMG-20260112-WA0037.jpg", date: "2026-01" },
-  { id: 9, title: "Digital Cover Art 2", categories: ["Digital Cover Art"], image: "/youtube-thumbnails/IMG-20260112-WA0038.jpg", date: "2026-01" },
-  { id: 10, title: "Digital Cover Art 3", categories: ["Digital Cover Art"], image: "/youtube-thumbnails/IMG-20260112-WA0039.jpg", date: "2026-01" },
-  { id: 11, title: "Digital Cover Art 4", categories: ["Digital Cover Art"], image: "/youtube-thumbnails/IMG-20260112-WA0040.jpg", date: "2026-01" },
-  { id: 12, title: "Digital Cover Art 5", categories: ["Digital Cover Art"], image: "/youtube-thumbnails/IMG-20260112-WA0041.jpg", date: "2026-01" },
-  { id: 13, title: "Digital Cover Art 6", categories: ["Digital Cover Art"], image: "/youtube-thumbnails/IMG-20260112-WA0042.jpg", date: "2026-01" },
-  { id: 14, title: "Digital Cover Art 7", categories: ["Digital Cover Art"], image: "/youtube-thumbnails/IMG-20260112-WA0043.jpg", date: "2026-01" },
-  { id: 15, title: "Digital Cover Art 8", categories: ["Digital Cover Art"], image: "/youtube-thumbnails/IMG-20260112-WA0044.jpg", date: "2026-01" },
-  { id: 16, title: "Digital Cover Art 9", categories: ["Digital Cover Art"], image: "/youtube-thumbnails/IMG-20260112-WA0045.jpg", date: "2026-01" },
+  { id: 8, title: "Digital Cover Art 1", categories: ["Digital Cover Art"], image: "/youtube-thumbnails/IMG-20260112-WA0037.webp", date: "2026-01" },
+  { id: 9, title: "Digital Cover Art 2", categories: ["Digital Cover Art"], image: "/youtube-thumbnails/IMG-20260112-WA0038.webp", date: "2026-01" },
+  { id: 10, title: "Digital Cover Art 3", categories: ["Digital Cover Art"], image: "/youtube-thumbnails/IMG-20260112-WA0039.webp", date: "2026-01" },
+  { id: 11, title: "Digital Cover Art 4", categories: ["Digital Cover Art"], image: "/youtube-thumbnails/IMG-20260112-WA0040.webp", date: "2026-01" },
+  { id: 12, title: "Digital Cover Art 5", categories: ["Digital Cover Art"], image: "/youtube-thumbnails/IMG-20260112-WA0041.webp", date: "2026-01" },
+  { id: 13, title: "Digital Cover Art 6", categories: ["Digital Cover Art"], image: "/youtube-thumbnails/IMG-20260112-WA0042.webp", date: "2026-01" },
+  { id: 14, title: "Digital Cover Art 7", categories: ["Digital Cover Art"], image: "/youtube-thumbnails/IMG-20260112-WA0043.webp", date: "2026-01" },
+  { id: 15, title: "Digital Cover Art 8", categories: ["Digital Cover Art"], image: "/youtube-thumbnails/IMG-20260112-WA0044.webp", date: "2026-01" },
+  { id: 16, title: "Digital Cover Art 9", categories: ["Digital Cover Art"], image: "/youtube-thumbnails/IMG-20260112-WA0045.webp", date: "2026-01" },
 
   // --- Posters & Flyers (Editorial Posters & Visuals) ---
-  { id: 17, title: "Editorial Design 1", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/IMG-20251219-WA0008.jpg", date: "2025-12" },
-  { id: 18, title: "Editorial Design 2", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/IMG-20260108-WA0013.jpg", date: "2026-01" },
-  { id: 21, title: "Editorial Design 5", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/IMG-20260108-WA0016.jpg", date: "2026-01" },
-  { id: 22, title: "Editorial Design 6", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/IMG-20260109-WA0003.jpg", date: "2026-01" },
-  { id: 23, title: "Editorial Design 7", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/IMG-20260109-WA0004.jpg", date: "2026-01" },
-  { id: 24, title: "Editorial Design 8", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/IMG-20260109-WA0011.jpg", date: "2026-01" },
-  { id: 25, title: "Editorial Design 9", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/IMG-20260109-WA0012.jpg", date: "2026-01" },
-  { id: 27, title: "Editorial Design 11", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/IMG-20260109-WA0015.jpg", date: "2026-01" },
-  { id: 28, title: "Editorial Design 12", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/IMG-20260109-WA0018.jpg", date: "2026-01" },
-  { id: 30, title: "Editorial Design 14", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/IMG-20260110-WA0006.jpg", date: "2026-01" },
-  { id: 31, title: "Editorial Design 15", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/IMG-20260110-WA0007.jpg", date: "2026-01" },
-  { id: 33, title: "Editorial Design 17", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/IMG-20260110-WA0010.jpg", date: "2026-01" },
-  { id: 34, title: "Editorial Design 18", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/IMG-20260110-WA0014.jpg", date: "2026-01" },
-  { id: 35, title: "Editorial Design 19", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/IMG-20260110-WA0015.jpg", date: "2026-01" },
+  { id: 17, title: "Editorial Design 1", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/IMG-20251219-WA0008.webp", date: "2025-12" },
+  { id: 18, title: "Editorial Design 2", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/IMG-20260108-WA0013.webp", date: "2026-01" },
+  { id: 21, title: "Editorial Design 5", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/IMG-20260108-WA0016.webp", date: "2026-01" },
+  { id: 22, title: "Editorial Design 6", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/IMG-20260109-WA0003.webp", date: "2026-01" },
+  { id: 23, title: "Editorial Design 7", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/IMG-20260109-WA0004.webp", date: "2026-01" },
+  { id: 24, title: "Editorial Design 8", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/IMG-20260109-WA0011.webp", date: "2026-01" },
+  { id: 25, title: "Editorial Design 9", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/IMG-20260109-WA0012.webp", date: "2026-01" },
+  { id: 27, title: "Editorial Design 11", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/IMG-20260109-WA0015.webp", date: "2026-01" },
+  { id: 28, title: "Editorial Design 12", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/IMG-20260109-WA0018.webp", date: "2026-01" },
+  { id: 30, title: "Editorial Design 14", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/IMG-20260110-WA0006.webp", date: "2026-01" },
+  { id: 31, title: "Editorial Design 15", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/IMG-20260110-WA0007.webp", date: "2026-01" },
+  { id: 33, title: "Editorial Design 17", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/IMG-20260110-WA0010.webp", date: "2026-01" },
+  { id: 34, title: "Editorial Design 18", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/IMG-20260110-WA0014.webp", date: "2026-01" },
+  { id: 35, title: "Editorial Design 19", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/IMG-20260110-WA0015.webp", date: "2026-01" },
   
   // New Event Flyers
-  { id: 120, title: "SDCSA Kickboxing Championship Visual", categories: ["Editorial Posters & Visuals"], image: "/event-flyers/3.png", date: "2026-05" },
-  { id: 121, title: "Kickboxing League Promotional Visual", categories: ["Editorial Posters & Visuals"], image: "/event-flyers/4.png", date: "2026-05" },
-  { id: 122, title: "SDCSA Standee - Nasiklub Edition", categories: ["Editorial Posters & Visuals", "Brand Identity & Insignia"], image: "/event-flyers/SDCSA - Standy - Nasiklub.png", date: "2026-05" },
-  { id: 123, title: "5th Nashik District Kickboxing Championship", categories: ["Editorial Posters & Visuals"], image: "/event-flyers/post - 5th NASHIK DISTRICT KICKBOXING COMPETITION 2026.png", date: "2026-05" },
+  { id: 120, title: "SDCSA Kickboxing Championship Visual", categories: ["Editorial Posters & Visuals"], image: "/event-flyers/3.webp", date: "2026-05" },
+  { id: 121, title: "Kickboxing League Promotional Visual", categories: ["Editorial Posters & Visuals"], image: "/event-flyers/4.webp", date: "2026-05" },
+  { id: 122, title: "SDCSA Standee - Nasiklub Edition", categories: ["Editorial Posters & Visuals", "Brand Identity & Insignia"], image: "/event-flyers/SDCSA - Standy - Nasiklub.webp", date: "2026-05" },
+  { id: 123, title: "5th Nashik District Kickboxing Championship", categories: ["Editorial Posters & Visuals"], image: "/event-flyers/post - 5th NASHIK DISTRICT KICKBOXING COMPETITION 2026.webp", date: "2026-05" },
 
   // New Cafe Blue Lagoon Posters
-  { id: 124, title: "Blue Lagoon Culinary - Non-Veg Feast", categories: ["Editorial Posters & Visuals", "Brand Identity & Insignia"], image: "/cafe-blue-lagoon/NON VEG MEAL.png", featured: true, date: "2026-05" },
-  { id: 125, title: "Blue Lagoon Culinary - Nutritional Specs", categories: ["Editorial Posters & Visuals", "Brand Identity & Insignia"], image: "/cafe-blue-lagoon/cafe-blue-lagoon-NON VEG MEAL - macros.png", date: "2026-05" },
+  { id: 124, title: "Blue Lagoon Culinary - Non-Veg Feast", categories: ["Editorial Posters & Visuals", "Brand Identity & Insignia"], image: "/cafe-blue-lagoon/NON VEG MEAL.webp", featured: true, date: "2026-05" },
+  { id: 125, title: "Blue Lagoon Culinary - Nutritional Specs", categories: ["Editorial Posters & Visuals", "Brand Identity & Insignia"], image: "/cafe-blue-lagoon/cafe-blue-lagoon-NON VEG MEAL - macros.webp", date: "2026-05" },
 
   // New MotoTrek flyers & posters
-  { id: 126, title: "MotoTrek Retail Boost Flyer", categories: ["Editorial Posters & Visuals", "Digital Cover Art"], image: "/posters-flyers/mototrek-boost-marketing.png", date: "2026-01" },
-  { id: 127, title: "MotoTrek Duke's Nose Sunrise Trek", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/Duke's Nose Poster.png", date: "2026-01" },
-  { id: 128, title: "MotoTrek Summer Adventure Camp", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/Mototrek - Summer Camp.png", date: "2026-01" },
-  { id: 129, title: "MotoTrek Duke's Nose Sunrise Flyer", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/duke's nose camping and sunrise trek - mototrek.png", date: "2026-01" },
+  { id: 126, title: "MotoTrek Retail Boost Flyer", categories: ["Editorial Posters & Visuals", "Digital Cover Art"], image: "/posters-flyers/mototrek-boost-marketing.webp", date: "2026-01" },
+  { id: 127, title: "MotoTrek Duke's Nose Sunrise Trek", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/Duke's Nose Poster.webp", date: "2026-01" },
+  { id: 128, title: "MotoTrek Summer Adventure Camp", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/Mototrek - Summer Camp.webp", date: "2026-01" },
+  { id: 129, title: "MotoTrek Duke's Nose Sunrise Flyer", categories: ["Editorial Posters & Visuals"], image: "/posters-flyers/duke's nose camping and sunrise trek - mototrek.webp", date: "2026-01" },
 
   // --- Reels & Shorts (Short-Form Cinema & Reels) ---
-  { id: 38, title: "Short Film Reel 3", categories: ["Short-Form Cinema & Reels"], image: "/reel-thumbnails/IMG-20260112-WA0048.jpg", date: "2026-01" },
-  { id: 44, title: "Short Film Reel 9", categories: ["Short-Form Cinema & Reels"], image: "/reel-thumbnails/IMG-20260112-WA0054.jpg", date: "2026-01" },
+  { id: 38, title: "Short Film Reel 3", categories: ["Short-Form Cinema & Reels"], image: "/reel-thumbnails/IMG-20260112-WA0048.webp", date: "2026-01" },
+  { id: 44, title: "Short Film Reel 9", categories: ["Short-Form Cinema & Reels"], image: "/reel-thumbnails/IMG-20260112-WA0054.webp", date: "2026-01" },
   
   // New MotoTrek Reels (Videos with extracted WebP frame thumbnails)
   { id: 130, title: "MotoTrek Cine - B20 Sena Intercom Review", categories: ["Short-Form Cinema & Reels", "Brand Identity & Insignia"], image: "/reel-thumbnails/video-thumb-130.webp", videoUrl: "/videos/B20-sena-intercom.mp4", isVideo: true, date: "2026-01" },
@@ -159,11 +159,11 @@ export const portfolioItems: PortfolioItem[] = [
   { id: 137, title: "UNMAPD - Brand Logo Introduction Animation", categories: ["Short-Form Cinema & Reels", "Brand Identity & Insignia", "Motion Picture & Videography"], image: "/reel-thumbnails/video-thumb-137.webp", videoUrl: "/videos/UNMAPD-logo-animation-epic.mp4", isVideo: true, featured: true, date: "2026-06" },
 
   // New MotoTrek Insignia Cover Designs (Thumbnails presented separately as images)
-  { id: 201, title: "MotoTrek Insignia - Cover Design 1", categories: ["Digital Cover Art", "Brand Identity & Insignia"], image: "/reel-thumbnails/mototrek-reel-thumbnail-1.png", date: "2026-01" },
-  { id: 202, title: "MotoTrek Insignia - Cover Design 2", categories: ["Digital Cover Art", "Brand Identity & Insignia"], image: "/reel-thumbnails/mototrek-reel-thumbnail-2.png", date: "2026-01" },
-  { id: 203, title: "MotoTrek Insignia - Cover Design 3", categories: ["Digital Cover Art", "Brand Identity & Insignia"], image: "/reel-thumbnails/mototrek-reel-thumbnail-3.png", date: "2026-01" },
-  { id: 205, title: "MotoTrek Insignia - Cover Design 5", categories: ["Digital Cover Art", "Brand Identity & Insignia"], image: "/reel-thumbnails/mototrek-reel-thumbnail-4.1.png", date: "2026-01" },
-  { id: 206, title: "MotoTrek Insignia - Promotional Meme Artwork", categories: ["Digital Cover Art", "Brand Identity & Insignia"], image: "/reel-thumbnails/mototrek-meme-thumbnail.png", date: "2026-01" },
+  { id: 201, title: "MotoTrek Insignia - Cover Design 1", categories: ["Digital Cover Art", "Brand Identity & Insignia"], image: "/reel-thumbnails/mototrek-reel-thumbnail-1.webp", date: "2026-01" },
+  { id: 202, title: "MotoTrek Insignia - Cover Design 2", categories: ["Digital Cover Art", "Brand Identity & Insignia"], image: "/reel-thumbnails/mototrek-reel-thumbnail-2.webp", date: "2026-01" },
+  { id: 203, title: "MotoTrek Insignia - Cover Design 3", categories: ["Digital Cover Art", "Brand Identity & Insignia"], image: "/reel-thumbnails/mototrek-reel-thumbnail-3.webp", date: "2026-01" },
+  { id: 205, title: "MotoTrek Insignia - Cover Design 5", categories: ["Digital Cover Art", "Brand Identity & Insignia"], image: "/reel-thumbnails/mototrek-reel-thumbnail-4.1.webp", date: "2026-01" },
+  { id: 206, title: "MotoTrek Insignia - Promotional Meme Artwork", categories: ["Digital Cover Art", "Brand Identity & Insignia"], image: "/reel-thumbnails/mototrek-meme-thumbnail.webp", date: "2026-01" },
 
   // --- Brochures & Publications (Print Media & Brochures) ---
   { id: 46, title: "Do Dham Trek Package Brochure", categories: ["Print Media & Brochures", "Brand Identity & Insignia"], image: "/broshures/Do dham Broshure alpine Trekkers.webp", pdfUrl: "/broshures/Do dham Broshure alpine Trekkers.pdf", date: "2025-11" },
@@ -176,9 +176,9 @@ export const portfolioItems: PortfolioItem[] = [
   { id: 141, title: "Kedarnath Diaries - Light Edition", categories: ["Print Media & Brochures", "Brand Identity & Insignia"], image: "/broshures/Kedarnath Diaries Broshure Light.webp", pdfUrl: "/broshures/Kedarnath Diaries Broshure Light.pdf", date: "2026-03" },
 
   // New Cafe Blue Lagoon Menus
-  { id: 142, title: "Blue Lagoon Culinary - Breakfast Menu", categories: ["Print Media & Brochures", "Brand Identity & Insignia"], image: "/cafe-blue-lagoon/cafe-blue-lagoon-breakfast-menu.png", date: "2026-05" },
-  { id: 143, title: "Blue Lagoon Culinary - Lunch Menu", categories: ["Print Media & Brochures", "Brand Identity & Insignia"], image: "/cafe-blue-lagoon/cafe-blue-lagoon-lunch-menu.png", date: "2026-05" },
-  { id: 144, title: "Blue Lagoon Culinary - Comprehensive Menu", categories: ["Print Media & Brochures", "Brand Identity & Insignia"], image: "/cafe-blue-lagoon/cafe-blue-lagoon-menu.png", date: "2026-05" },
+  { id: 142, title: "Blue Lagoon Culinary - Breakfast Menu", categories: ["Print Media & Brochures", "Brand Identity & Insignia"], image: "/cafe-blue-lagoon/cafe-blue-lagoon-breakfast-menu.webp", date: "2026-05" },
+  { id: 143, title: "Blue Lagoon Culinary - Lunch Menu", categories: ["Print Media & Brochures", "Brand Identity & Insignia"], image: "/cafe-blue-lagoon/cafe-blue-lagoon-lunch-menu.webp", date: "2026-05" },
+  { id: 144, title: "Blue Lagoon Culinary - Comprehensive Menu", categories: ["Print Media & Brochures", "Brand Identity & Insignia"], image: "/cafe-blue-lagoon/cafe-blue-lagoon-menu.webp", date: "2026-05" },
 
   // --- Presentations & Pitch Decks (Presentations & Pitch Decks) ---
   { id: 150, title: "Alpine Trekkers Brand Presentation", categories: ["Presentations & Pitch Decks", "Brand Identity & Insignia"], image: "/pitch-decks/Alpine Trekkers Presentation.webp", pdfUrl: "/pitch-decks/Alpine Trekkers Presentation.pdf", date: "2026-02" },
@@ -189,11 +189,11 @@ export const portfolioItems: PortfolioItem[] = [
     id: 160,
     title: "MotoTrek Showcase - Raida Discover Riding Boots",
     categories: ["Product Showcases & Carousels", "Brand Identity & Insignia"],
-    image: "/product-carousels/Mototrek - Raida Discover RIding Boots/1.png",
+    image: "/product-carousels/Mototrek - Raida Discover RIding Boots/1.webp",
     images: [
-      "/product-carousels/Mototrek - Raida Discover RIding Boots/1.png",
-      "/product-carousels/Mototrek - Raida Discover RIding Boots/2.png",
-      "/product-carousels/Mototrek - Raida Discover RIding Boots/3.png"
+      "/product-carousels/Mototrek - Raida Discover RIding Boots/1.webp",
+      "/product-carousels/Mototrek - Raida Discover RIding Boots/2.webp",
+      "/product-carousels/Mototrek - Raida Discover RIding Boots/3.webp"
     ],
     isCarousel: true,
     date: "2026-01"
@@ -202,11 +202,11 @@ export const portfolioItems: PortfolioItem[] = [
     id: 161,
     title: "MotoTrek Showcase - BluArmour C50 Plus Intercom",
     categories: ["Product Showcases & Carousels", "Brand Identity & Insignia"],
-    image: "/product-carousels/Mototrek - BluArmour C50 Plus Bluetooth Intercom/1.png",
+    image: "/product-carousels/Mototrek - BluArmour C50 Plus Bluetooth Intercom/1.webp",
     images: [
-      "/product-carousels/Mototrek - BluArmour C50 Plus Bluetooth Intercom/1.png",
-      "/product-carousels/Mototrek - BluArmour C50 Plus Bluetooth Intercom/2.png",
-      "/product-carousels/Mototrek - BluArmour C50 Plus Bluetooth Intercom/3.png"
+      "/product-carousels/Mototrek - BluArmour C50 Plus Bluetooth Intercom/1.webp",
+      "/product-carousels/Mototrek - BluArmour C50 Plus Bluetooth Intercom/2.webp",
+      "/product-carousels/Mototrek - BluArmour C50 Plus Bluetooth Intercom/3.webp"
     ],
     isCarousel: true,
     date: "2026-01"
@@ -215,11 +215,11 @@ export const portfolioItems: PortfolioItem[] = [
     id: 162,
     title: "MotoTrek Showcase - Studds Trooper Modular Helmet",
     categories: ["Product Showcases & Carousels", "Brand Identity & Insignia"],
-    image: "/product-carousels/Mototrek - STUDDS HELMET  TROOPER Modular Helmet/1.png",
+    image: "/product-carousels/Mototrek - STUDDS HELMET  TROOPER Modular Helmet/1.webp",
     images: [
-      "/product-carousels/Mototrek - STUDDS HELMET  TROOPER Modular Helmet/1.png",
-      "/product-carousels/Mototrek - STUDDS HELMET  TROOPER Modular Helmet/2.png",
-      "/product-carousels/Mototrek - STUDDS HELMET  TROOPER Modular Helmet/3.png"
+      "/product-carousels/Mototrek - STUDDS HELMET  TROOPER Modular Helmet/1.webp",
+      "/product-carousels/Mototrek - STUDDS HELMET  TROOPER Modular Helmet/2.webp",
+      "/product-carousels/Mototrek - STUDDS HELMET  TROOPER Modular Helmet/3.webp"
     ],
     isCarousel: true,
     date: "2026-01"
@@ -228,11 +228,11 @@ export const portfolioItems: PortfolioItem[] = [
     id: 163,
     title: "MotoTrek Showcase - Tripole Terra 50L Rucksack",
     categories: ["Product Showcases & Carousels", "Brand Identity & Insignia"],
-    image: "/product-carousels/Mototrek - TRIPOLE TERRA 50L Rucksack/1.png",
+    image: "/product-carousels/Mototrek - TRIPOLE TERRA 50L Rucksack/1.webp",
     images: [
-      "/product-carousels/Mototrek - TRIPOLE TERRA 50L Rucksack/1.png",
-      "/product-carousels/Mototrek - TRIPOLE TERRA 50L Rucksack/2.png",
-      "/product-carousels/Mototrek - TRIPOLE TERRA 50L Rucksack/3.png"
+      "/product-carousels/Mototrek - TRIPOLE TERRA 50L Rucksack/1.webp",
+      "/product-carousels/Mototrek - TRIPOLE TERRA 50L Rucksack/2.webp",
+      "/product-carousels/Mototrek - TRIPOLE TERRA 50L Rucksack/3.webp"
     ],
     isCarousel: true,
     date: "2026-01"

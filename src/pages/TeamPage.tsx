@@ -9,19 +9,19 @@ const teamMembers = [
     name: "Nikhil Baharwal",
     role: "Director & Co-founder",
     bio: "Nikhil brings over 5 years of experience in visual storytelling. His vision and leadership have shaped N B Productions into what it is today. With a keen eye for cinematic excellence, he oversees all major productions.",
-    image: "/founders/Nikhil-Baharwal-Director-and-Co-founder.png",
+    image: "/founders/Nikhil-Baharwal-Director-and-Co-founder.webp",
   },
   {
     name: "Divyaraj Baharwal",
     role: "Co-founder & Technical Director",
     bio: "Divyaraj is the technical backbone of the team. His expertise in equipment, post-production, and technical workflows ensures every project meets the highest quality standards.",
-    image: "/founders/Divyaraj-Baharwal-Technical-Director-and-Co-founder.png",
+    image: "/founders/Divyaraj-Baharwal-Technical-Director-and-Co-founder.webp",
   },
   {
     name: "Durvesh Baharwal",
     role: "Co-founder & Creative Director",
     bio: "Durvesh leads the creative vision across all projects. His innovative approach to design and storytelling brings fresh perspectives to every campaign and production.",
-    image: "/founders/Durvesh-Baharwal-Creative-Director-and-Co-founder.png",
+    image: "/founders/Durvesh-Baharwal-Creative-Director-and-Co-founder.webp",
   },
 ];
 
@@ -76,7 +76,7 @@ const TeamPage = () => {
 
                     {/* Gold frame border */}
                     <div className="relative border-2 border-primary bg-background p-2 hover:border-primary/80 transition-all duration-500">
-                      <img
+                      <img loading="lazy"
                         src={member.image}
                         alt={member.name}
                         className="w-full h-auto object-contain relative z-10"

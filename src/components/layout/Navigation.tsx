@@ -43,8 +43,8 @@ const Navigation = () => {
         <div className="container-custom flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <img
-              src="/logo.png"
+            <img loading="lazy"
+              src="/logo.webp"
               alt="N B Productions & Films"
               className="h-10 md:h-12 w-auto object-contain transition-all duration-300 group-hover:scale-105"
             />

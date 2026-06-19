@@ -8,42 +8,42 @@ const services = [
     icon: Camera,
     title: "Photography",
     description: "Professional photography for weddings, events, products, and portraits.",
-    image: "/services/Photography.png",
+    image: "/services/Photography.webp",
     link: "/services#photography",
   },
   {
     icon: Video,
     title: "Videography & Reels",
     description: "Creative video production, video editing, and short-form reels for social media.",
-    image: "/services/Videography & Reels.png",
+    image: "/services/Videography & Reels.webp",
     link: "/services#videography-reels",
   },
   {
     icon: Film,
     title: "Cinematography & Production",
     description: "Cinematic storytelling, creative production, and high-end artistic direction.",
-    image: "/services/Cinematography & Production.png",
+    image: "/services/Cinematography & Production.webp",
     link: "/services#cinematography-production",
   },
   {
     icon: Palette,
     title: "Graphic & Branding Design",
     description: "Logos, brand identity design, and comprehensive graphic design solutions.",
-    image: "/services/Graphic & Branding Design.png",
+    image: "/services/Graphic & Branding Design.webp",
     link: "/services#graphic-branding",
   },
   {
     icon: FileImage,
     title: "Content & Social Media",
     description: "Social media management, content creation, and digital asset design.",
-    image: "/services/Content & Social Media.png",
+    image: "/services/Content & Social Media.webp",
     link: "/services#content-social",
   },
   {
     icon: Megaphone,
     title: "Digital Marketing",
     description: "Performance marketing (Meta/Google Ads), email marketing, and digital strategy.",
-    image: "/services/Digital Marketing.png",
+    image: "/services/Digital Marketing.webp",
     link: "/services#digital-marketing",
   },
 ];
@@ -89,7 +89,7 @@ const Services = () => {
               >
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
-                  <img
+                  <img loading="lazy"
                     src={service.image}
                     alt={service.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"

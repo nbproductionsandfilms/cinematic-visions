@@ -12,7 +12,7 @@ const services = [
     icon: Camera,
     title: "Photography",
     description: "Professional photography services for all occasions.",
-    image: "/services/Photography.png",
+    image: "/services/Photography.webp",
     features: [
       "Wedding Photography",
       "Product Photography",
@@ -27,7 +27,7 @@ const services = [
     icon: Video,
     title: "Videography & Reels",
     description: "Creative video production and editing for every platform.",
-    image: "/services/Videography & Reels.png",
+    image: "/services/Videography & Reels.webp",
     features: [
       "Video Editing & Reels",
       "Social Media Content",
@@ -42,7 +42,7 @@ const services = [
     icon: Film,
     title: "Cinematography & Production",
     description: "Cinematic storytelling with artistic direction.",
-    image: "/services/Cinematography & Production.png",
+    image: "/services/Cinematography & Production.webp",
     features: [
       "Creative Production",
       "Brand Films",
@@ -57,7 +57,7 @@ const services = [
     icon: Palette,
     title: "Graphic & Branding Design",
     description: "Visual identity and creative branding solutions.",
-    image: "/services/Graphic & Branding Design.png",
+    image: "/services/Graphic & Branding Design.webp",
     features: [
       "Graphic Design",
       "Branding & Identity Design",
@@ -72,7 +72,7 @@ const services = [
     icon: FileImage,
     title: "Content & Social Media",
     description: "Engaging content creation and full-service social media management.",
-    image: "/services/Content & Social Media.png",
+    image: "/services/Content & Social Media.webp",
     features: [
       "Social Media Management",
       "Content Creation",
@@ -87,7 +87,7 @@ const services = [
     icon: Megaphone,
     title: "Digital Marketing",
     description: "Strategic marketing and performance campaigns.",
-    image: "/services/Digital Marketing.png",
+    image: "/services/Digital Marketing.webp",
     features: [
       "Digital Marketing",
       "Performance Marketing (Meta/Google Ads)",
@@ -164,7 +164,7 @@ const ServicesPage = () => {
                 </div>
                 
                 <div className={`relative aspect-[4/3] rounded-lg overflow-hidden shadow-2xl bg-card/5 ${index % 2 === 1 ? "lg:order-1" : ""}`}>
-                  <img 
+                  <img loading="lazy" 
                     src={service.image} 
                     alt={service.title} 
                     className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"

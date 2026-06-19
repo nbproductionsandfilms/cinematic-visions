@@ -9,29 +9,29 @@ const eventCategories = [
     icon: Sparkles,
     title: "Fashion Shows",
     description: "Capturing runway elegance and designer collections with cinematic precision.",
-    image: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.17.14.jpeg",
+    image: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.17.14.webp",
   },
   {
     icon: Camera,
     title: "Photo Walks",
     description: "Community photography events exploring scenic locations and street photography.",
-    image: "/new/aesthetic_shoots/WhatsApp Image 2026-01-13 at 11.17.16 (1).jpeg",
+    image: "/new/aesthetic_shoots/WhatsApp Image 2026-01-13 at 11.17.16 (1).webp",
   },
   {
     icon: Calendar,
     title: "Party Events",
     description: "Dynamic coverage of celebrations, corporate events, and nightlife photography.",
-    image: "/new/couple_shoots/WhatsApp Image 2026-01-13 at 11.19.18.jpeg",
+    image: "/new/couple_shoots/WhatsApp Image 2026-01-13 at 11.19.18.webp",
   },
 ];
 
 const apnaWalaClickGallery = [
-  { type: "image", src: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.17.18 (1).jpeg", title: "Model Session" },
-  { type: "image", src: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.19.17 (1).jpeg", title: "Behind The Scenes" },
-  { type: "image", src: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.19.17 (2).jpeg", title: "Collaborative Shoot" },
-  { type: "video", src: "/videos/WhatsApp Video 2026-01-13 at 11.19.21.mp4", title: "BTS Video", thumbnail: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.20.37.jpeg" },
-  { type: "image", src: "/new/traditional_shoots/WhatsApp Image 2026-01-13 at 11.19.03 (1).jpeg", title: "Traditional Setup" },
-  { type: "video", src: "/videos/WhatsApp Video 2026-01-13 at 11.19.25.mp4", title: "Event Highlights", thumbnail: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.20.38.jpeg" },
+  { type: "image", src: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.17.18 (1).webp", title: "Model Session" },
+  { type: "image", src: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.19.17 (1).webp", title: "Behind The Scenes" },
+  { type: "image", src: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.19.17 (2).webp", title: "Collaborative Shoot" },
+  { type: "video", src: "/videos/WhatsApp Video 2026-01-13 at 11.19.21.mp4", title: "BTS Video", thumbnail: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.20.37.webp" },
+  { type: "image", src: "/new/traditional_shoots/WhatsApp Image 2026-01-13 at 11.19.03 (1).webp", title: "Traditional Setup" },
+  { type: "video", src: "/videos/WhatsApp Video 2026-01-13 at 11.19.25.mp4", title: "Event Highlights", thumbnail: "/new/model_shoots/WhatsApp Image 2026-01-13 at 11.20.38.webp" },
 ];
 
 const Events = () => {
@@ -71,7 +71,7 @@ const Events = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <div className="group relative aspect-[4/5] rounded-lg overflow-hidden">
-                <img
+                <img loading="lazy"
                   src={event.image}
                   alt={event.title}
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
@@ -143,7 +143,7 @@ const Events = () => {
                     onClick={() => setSelectedVideo(item.src)}
                     className="w-full h-full"
                   >
-                    <img
+                    <img loading="lazy"
                       src={item.thumbnail}
                       alt={item.title}
                       className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
@@ -156,7 +156,7 @@ const Events = () => {
                   </button>
                 ) : (
                   <>
-                    <img
+                    <img loading="lazy"
                       src={item.src}
                       alt={item.title}
                       className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
@@ -204,7 +204,7 @@ const Events = () => {
             >
               <X className="w-6 h-6 text-foreground" />
             </button>
-            <video
+            <video preload="none"
               src={selectedVideo}
               controls
               autoPlay

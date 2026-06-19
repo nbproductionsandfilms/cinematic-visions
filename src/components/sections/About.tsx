@@ -69,8 +69,8 @@ const About = () => {
           >
             <div className="relative aspect-[4/5] rounded-lg overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-transparent" />
-              <img
-                src="/founders/about-us.png"
+              <img loading="lazy"
+                src="/founders/about-us.webp"
                 alt="N B Productions & Films Team"
                 className="w-full h-full object-cover"
               />

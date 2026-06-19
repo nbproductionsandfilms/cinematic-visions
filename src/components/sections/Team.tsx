@@ -7,19 +7,19 @@ const teamMembers = [
     name: "Nikhil Baharwal",
     role: "Director & Co-founder",
     description: "Visionary leader with a passion for cinematic storytelling.",
-    image: "/founders/Nikhil-Baharwal-Director-and-Co-founder.png",
+    image: "/founders/Nikhil-Baharwal-Director-and-Co-founder.webp",
   },
   {
     name: "Divyaraj Baharwal",
     role: "Co-founder & Technical Director",
     description: "Technical mastermind ensuring flawless execution.",
-    image: "/founders/Divyaraj-Baharwal-Technical-Director-and-Co-founder.png",
+    image: "/founders/Divyaraj-Baharwal-Technical-Director-and-Co-founder.webp",
   },
   {
     name: "Durvesh Baharwal",
     role: "Co-founder & Creative Director",
     description: "Creative genius driving innovative visual concepts.",
-    image: "/founders/Durvesh-Baharwal-Creative-Director-and-Co-founder.png",
+    image: "/founders/Durvesh-Baharwal-Creative-Director-and-Co-founder.webp",
   },
 ];
 
@@ -65,7 +65,7 @@ const Team = () => {
 
                 {/* Gold frame border */}
                 <div className="relative border-2 border-primary bg-background p-2 group-hover:border-primary/80 transition-all duration-500">
-                  <img
+                  <img loading="lazy"
                     src={member.image}
                     alt={member.name}
                     className="w-full h-auto object-contain relative z-10 transition-transform duration-500 group-hover:scale-[1.02]"

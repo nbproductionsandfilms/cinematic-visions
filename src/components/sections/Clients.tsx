@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
 const clientLogos = [
-  { name: "Infinite Waves", path: "/logos/Infinite-Waves-logo.png" },
-  { name: "The Bhartiya Trekkers", path: "/logos/the-bhartiya-trekkers.png" },
-  { name: "MotoTrek Stores", path: "/logos/MotoTrek Stores Logo.jpeg" },
+  { name: "Infinite Waves", path: "/logos/Infinite-Waves-logo.webp" },
+  { name: "The Bhartiya Trekkers", path: "/logos/the-bhartiya-trekkers.webp" },
+  { name: "MotoTrek Stores", path: "/logos/MotoTrek Stores Logo.webp" },
   { name: "AN Motion Pictures", path: "/logos/an-motion-pictures.webp" },
   { name: "UNMAPD", path: "/logos/unmapd-logo.webp" },
   { name: "Apnawalaclick", path: "/logos/apnawalaclick-logo.webp" },
@@ -47,7 +47,7 @@ const Clients = () => {
                 key={idx}
                 className="flex items-center justify-center h-20 w-44 shrink-0 group transition-all duration-500"
               >
-                <img
+                <img loading="lazy"
                   src={logo.path}
                   alt={`${logo.name} logo`}
                   className="max-h-16 md:max-h-20 max-w-full object-contain filter transition-all duration-500 hover:scale-105"

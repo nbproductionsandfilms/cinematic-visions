@@ -83,8 +83,8 @@ const AboutPage = () => {
               className="relative aspect-[4/5] md:aspect-square"
             >
               <div className="absolute inset-0 rounded-lg overflow-hidden shadow-2xl bg-card/5">
-                <img
-                  src="/founders/about-us.png"
+                <img loading="lazy"
+                  src="/founders/about-us.webp"
                   alt="N B Productions & Films Team"
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />

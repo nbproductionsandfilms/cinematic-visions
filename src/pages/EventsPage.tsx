@@ -12,7 +12,7 @@ const eventCategories = [
     icon: Sparkles,
     title: "Fashion Shows",
     description: "Capturing runway elegance and designer collections with cinematic precision. Our team covers backstage preparations, model walks, and the electric atmosphere of fashion events.",
-    image: "/events/fashion-shows/1a.png",
+    image: "/events/fashion-shows/1a.webp",
     highlights: ["Runway Coverage", "Backstage Access", "Designer Profiles", "Model Portfolios"],
     videos: ["https://www.youtube.com/embed/c0GSWL49sp0"]
   },
@@ -20,7 +20,7 @@ const eventCategories = [
     icon: Camera,
     title: "Photo Walks",
     description: "Community photography events exploring scenic locations, urban landscapes, and street photography. Join fellow photographers for creative exploration.",
-    image: "/events/photo-walks/20240414_183415.png",
+    image: "/events/photo-walks/20240414_183415.webp",
     highlights: ["Location Scouting", "Group Sessions", "Skill Workshops", "Portfolio Building"],
     videos: ["https://www.youtube.com/embed/bNuj9Wkh5pE", "https://www.youtube.com/embed/33WWhJewMQU"]
   },
@@ -28,7 +28,7 @@ const eventCategories = [
     icon: Calendar,
     title: "Party Events",
     description: "Dynamic coverage of celebrations, corporate events, nightlife, and social gatherings. We capture the energy and emotions of your special moments.",
-    image: "/events/party-events/aafw.jpg",
+    image: "/events/party-events/aafw.webp",
     highlights: ["Corporate Events", "Birthday Parties", "Club Photography", "Social Gatherings"],
     videos: []
   },
@@ -39,13 +39,13 @@ const apnaWalaClickGallery = [
   { type: "image", src: "/events/apnawalaclick/IMG_2084.JPG", title: "Behind The Scenes" },
   { type: "image", src: "/events/apnawalaclick/IMG_2086.JPG", title: "Collaborative Shoot" },
   { type: "image", src: "/events/apnawalaclick/IMG_4302.JPEG", title: "Team Setup" },
-  { type: "video", src: "https://www.youtube.com/embed/YPYKDmW6T3Y", title: "BTS Video 1", thumbnail: "https://img.youtube.com/vi/YPYKDmW6T3Y/maxresdefault.jpg" },
-  { type: "image", src: "/events/apnawalaclick/WhatsApp Image 2026-01-13 at 11.19.17 (3).jpeg", title: "Traditional Setup" },
-  { type: "image", src: "/events/apnawalaclick/WhatsApp Image 2026-04-06 at 15.29.05 (1).jpeg", title: "Cultural Vibes" },
-  { type: "video", src: "https://www.youtube.com/embed/0CcZut1P5Rg", title: "Event Highlights", thumbnail: "https://img.youtube.com/vi/0CcZut1P5Rg/maxresdefault.jpg" },
-  { type: "image", src: "/events/apnawalaclick/IMG_5504.jpg", title: "Portrait Shot" },
-  { type: "video", src: "/events/apnawalaclick/IMG_1568.MOV", title: "Action Glimpse 1", thumbnail: "/events/apnawalaclick/IMG_1568_thumb.jpg" },
-  { type: "video", src: "/events/apnawalaclick/IMG_5464.MOV", title: "Action Glimpse 2", thumbnail: "/events/apnawalaclick/IMG_5464_thumb.jpg" },
+  { type: "video", src: "https://www.youtube.com/embed/YPYKDmW6T3Y", title: "BTS Video 1", thumbnail: "https://img.youtube.com/vi/YPYKDmW6T3Y/maxresdefault.webp" },
+  { type: "image", src: "/events/apnawalaclick/WhatsApp Image 2026-01-13 at 11.19.17 (3).webp", title: "Traditional Setup" },
+  { type: "image", src: "/events/apnawalaclick/WhatsApp Image 2026-04-06 at 15.29.05 (1).webp", title: "Cultural Vibes" },
+  { type: "video", src: "https://www.youtube.com/embed/0CcZut1P5Rg", title: "Event Highlights", thumbnail: "https://img.youtube.com/vi/0CcZut1P5Rg/maxresdefault.webp" },
+  { type: "image", src: "/events/apnawalaclick/IMG_5504.webp", title: "Portrait Shot" },
+  { type: "video", src: "/events/apnawalaclick/IMG_1568.MOV", title: "Action Glimpse 1", thumbnail: "/events/apnawalaclick/IMG_1568_thumb.webp" },
+  { type: "video", src: "/events/apnawalaclick/IMG_5464.MOV", title: "Action Glimpse 2", thumbnail: "/events/apnawalaclick/IMG_5464_thumb.webp" },
 ];
 
 const EventsPage = () => {
@@ -143,7 +143,7 @@ const EventsPage = () => {
                           onClick={() => setSelectedVideo(item.src)}
                           className="w-full h-full block"
                         >
-                          <img
+                          <img loading="lazy"
                             src={item.thumbnail}
                             alt={item.title}
                             className="w-full h-auto transition-transform duration-700 group-hover:scale-105"
@@ -159,7 +159,7 @@ const EventsPage = () => {
                         </button>
                       ) : (
                         <div className="relative block">
-                          <img
+                          <img loading="lazy"
                             src={item.src}
                             alt={item.title}
                             className="w-full h-auto transition-transform duration-700 group-hover:scale-105"
@@ -217,7 +217,7 @@ const EventsPage = () => {
                 >
                   <div className={index % 2 === 1 ? "lg:order-2" : ""}>
                     <div className="relative rounded-lg overflow-hidden shadow-xl bg-card/5">
-                      <img
+                      <img loading="lazy"
                         src={event.image}
                         alt={event.title}
                         className="w-full h-auto object-contain max-h-[60vh] rounded-lg"
@@ -296,7 +296,7 @@ const EventsPage = () => {
                 className="w-full aspect-video"
               ></iframe>
             ) : (
-              <video
+              <video preload="none"
                 src={selectedVideo}
                 controls
                 autoPlay
